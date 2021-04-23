@@ -1,7 +1,5 @@
 ---
-name: Bug report
-about: Report a problem and help us fix it.
-labels: "bug"
+name: Bug report about: Report a problem and help us fix it. labels: "bug"
 ---
 
 
@@ -17,7 +15,6 @@ __Steps to Reproduce__
 1. do this
 2. do that
 3. now this happens
-
 
 __Expected Behavior__
 

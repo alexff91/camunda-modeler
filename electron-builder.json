@@ -18,7 +18,10 @@
     "target": [
       {
         "target": "zip",
-        "arch": [ "x64", "ia32" ]
+        "arch": [
+          "x64",
+          "ia32"
+        ]
       }
     ]
   },
@@ -27,7 +30,9 @@
     "target": [
       {
         "target": "tar.gz",
-        "arch": [ "x64" ]
+        "arch": [
+          "x64"
+        ]
       }
     ]
   },

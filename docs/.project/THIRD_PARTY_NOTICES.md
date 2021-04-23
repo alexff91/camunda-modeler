@@ -1,6 +1,7 @@
 # Third Party Notices (License Book)
 
-Up to date third party notices for the application can be generated via the `license-book` task, shipped with the project:
+Up to date third party notices for the application can be generated via the `license-book` task, shipped with the
+project:
 
 ```sh
 $ node tasks/license-book.js --help
@@ -16,7 +17,8 @@ Options:
   -h, --help                    print this help
 ```
 
-The file `THIRD_PARTY_NOTICES` that contains the license information is automatically updated as a pre-release step. You may trigger it manually, too:
+The file `THIRD_PARTY_NOTICES` that contains the license information is automatically updated as a pre-release step. You
+may trigger it manually, too:
 
 ```sh
 $ npm run pre-release

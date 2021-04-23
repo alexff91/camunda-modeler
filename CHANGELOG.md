@@ -1,34 +1,55 @@
 # Changelog
 
-All notable changes to the [Camunda Modeler](https://github.com/camunda/camunda-modeler) are documented here. We use [semantic versioning](http://semver.org/) for releases.
+All notable changes to the [Camunda Modeler](https://github.com/camunda/camunda-modeler) are documented here. We
+use [semantic versioning](http://semver.org/) for releases.
 
 ## Unreleased
 
 ___Note:__ Yet to be released changes appear here._
 
+## 4.7.1
+
+### General
+
+### BPMN
+
+### DMN
+
+### Forms
+
 ## 4.7.0
 
 ### General
 
-* `FEAT`: set `enable-duplicate-filtering` flag on deployments ([#2160](https://github.com/camunda/camunda-modeler/issues/2160))
+* `FEAT`: set `enable-duplicate-filtering` flag on
+  deployments ([#2160](https://github.com/camunda/camunda-modeler/issues/2160))
 * `FEAT`: allow deployments with multiple files ([#2131](https://github.com/camunda/camunda-modeler/issues/2131))
 * `FEAT`: introduce status bar ([#2175](https://github.com/camunda/camunda-modeler/issues/2175))
 * `FEAT`: introduce engine profile overlay ([#2187](https://github.com/camunda/camunda-modeler/issues/2187))
-* `CHORE`: capture used Camunda Forms in telemetry events ([#2188](https://github.com/camunda/camunda-modeler/issues/2188))
+* `CHORE`: capture used Camunda Forms in telemetry
+  events ([#2188](https://github.com/camunda/camunda-modeler/issues/2188))
 
 ### BPMN
 
-* `FEAT`: support creating, opening, deploying and starting Zeebe BPMN diagrams ([#2029](https://github.com/camunda/camunda-modeler/issues/2029))
-* `FEAT`: support non-default element templates for root elements ([#2121](https://github.com/camunda/camunda-modeler/issues/2121))
-* `FEAT`: support BPMN Errors on external service tasks ([#2070](https://github.com/camunda/camunda-modeler/issues/2070))
-* `FEAT`: introduce JSON Schema versioning via `$schema` property ([#2083](https://github.com/camunda/camunda-modeler/issues/2083))
-* `FEAT`: validate element templates against JSON Schema ([#2159](https://github.com/camunda/camunda-modeler/issues/2159))
+* `FEAT`: support creating, opening, deploying and starting Zeebe BPMN
+  diagrams ([#2029](https://github.com/camunda/camunda-modeler/issues/2029))
+* `FEAT`: support non-default element templates for root
+  elements ([#2121](https://github.com/camunda/camunda-modeler/issues/2121))
+* `FEAT`: support BPMN Errors on external service
+  tasks ([#2070](https://github.com/camunda/camunda-modeler/issues/2070))
+* `FEAT`: introduce JSON Schema versioning via `$schema`
+  property ([#2083](https://github.com/camunda/camunda-modeler/issues/2083))
+* `FEAT`: validate element templates against JSON
+  Schema ([#2159](https://github.com/camunda/camunda-modeler/issues/2159))
 * `FEAT`: enable connection tool for text annotations ([#2042](https://github.com/camunda/camunda-modeler/issues/2042))
 * `FIX`: support property panel plugins again ([#1992](https://github.com/camunda/camunda-modeler/issues/1992))
-* `FIX`: consistently validate element templates in catalog ([#2110](https://github.com/camunda/camunda-modeler/issues/2110))
+* `FIX`: consistently validate element templates in
+  catalog ([#2110](https://github.com/camunda/camunda-modeler/issues/2110))
 * `FIX`: improve error messages for element templates ([#2111](https://github.com/camunda/camunda-modeler/issues/2111))
-* `FIX`: correctly display empty versions for element templates ([#2101](https://github.com/camunda/camunda-modeler/issues/2101))
-* `FIX`: correctly display long variable names in the overview ([#2166](https://github.com/camunda/camunda-modeler/issues/2166))
+* `FIX`: correctly display empty versions for element
+  templates ([#2101](https://github.com/camunda/camunda-modeler/issues/2101))
+* `FIX`: correctly display long variable names in the
+  overview ([#2166](https://github.com/camunda/camunda-modeler/issues/2166))
 * `CHORE`: disable Zeebe BPMN editor with flag ([#2171](https://github.com/camunda/camunda-modeler/pull/2171))
 * `CHORE`: bump to `bpmn-js@8.3.0`
 * `CHORE`: bump to `bpmn-js-properties-panel@0.42.0`
@@ -41,7 +62,8 @@ ___Note:__ Yet to be released changes appear here._
 
 * `FEAT`: add Forms editor ([#2149](https://github.com/camunda/camunda-modeler/issues/2149))
 * `FEAT`: allow opening `.form` files ([#2108](https://github.com/camunda/camunda-modeler/issues/2108))
-* `FEAT`: allow deploying Forms alongside BPMN diagrams ([#2100](https://github.com/camunda/camunda-modeler/issues/2100))
+* `FEAT`: allow deploying Forms alongside BPMN
+  diagrams ([#2100](https://github.com/camunda/camunda-modeler/issues/2100))
 
 ## 4.6.0
 
@@ -49,15 +71,22 @@ ___Note:__ Yet to be released changes appear here._
 
 * `FEAT`: offer `Check for Update` option in the menu ([#2010](https://github.com/camunda/camunda-modeler/issues/2010))
 * `FEAT`: open fullscreen with Ctrl+Cmd+F on Mac ([#2050](https://github.com/camunda/camunda-modeler/issues/2050))
-* `FIX`: correctly log filepath when logging a `write file` error ([#2079](https://github.com/camunda/camunda-modeler/pull/2079))
-* `CHORE`: bump to `diagram-js@7.2.0`. Auxiliary mouse button events will now be passed as `element.*` mouse events to components (incl. components provided via plugins). You must filter your event listeners to prevent reactions to these events ([`1063f7c18`](https://github.com/bpmn-io/diagram-js/commit/1063f7c18474096d3d7c9e400ce82a1bf762a157)).
+* `FIX`: correctly log filepath when logging a `write file`
+  error ([#2079](https://github.com/camunda/camunda-modeler/pull/2079))
+* `CHORE`: bump to `diagram-js@7.2.0`. Auxiliary mouse button events will now be passed as `element.*` mouse events to
+  components (incl. components provided via plugins). You must filter your event listeners to prevent reactions to these
+  events ([`1063f7c18`](https://github.com/bpmn-io/diagram-js/commit/1063f7c18474096d3d7c9e400ce82a1bf762a157)).
 
 ### BPMN
 
-* `FEAT`: add `Participant-` prefix to respective `ID` and `Name` textInput labels to improve clarity ([#1738](https://github.com/camunda/camunda-modeler/issues/1738))
-* `CHORE`: capture userTask formKey metrics on `diagram open` and `diagram deploy` events ([#2062](https://github.com/camunda/camunda-modeler/issues/2062))
-* `FIX`: only catch DeploymentErrors and re-throw others when deploying a process or starting process instance fails ([#2078](https://github.com/camunda/camunda-modeler/issues/2078))
-* `FIX`: only allow cancel boundary event on transaction subprocesses ([#2026](https://github.com/camunda/camunda-modeler/issues/2026))
+* `FEAT`: add `Participant-` prefix to respective `ID` and `Name` textInput labels to improve
+  clarity ([#1738](https://github.com/camunda/camunda-modeler/issues/1738))
+* `CHORE`: capture userTask formKey metrics on `diagram open` and `diagram deploy`
+  events ([#2062](https://github.com/camunda/camunda-modeler/issues/2062))
+* `FIX`: only catch DeploymentErrors and re-throw others when deploying a process or starting process instance
+  fails ([#2078](https://github.com/camunda/camunda-modeler/issues/2078))
+* `FIX`: only allow cancel boundary event on transaction
+  subprocesses ([#2026](https://github.com/camunda/camunda-modeler/issues/2026))
 * `CHORE`: bump to `bpmn-js@8.2.0`
 * `CHORE`: bump to `bpmn-js-properties-panel@0.40.0`
 * `CHORE`: bump to `@bpmn-io/extract-process-variables@0.4.0`
@@ -65,7 +94,9 @@ ___Note:__ Yet to be released changes appear here._
 ### DMN
 
 * `FEAT`: add hand tool to DRD view ([#614](https://github.com/bpmn-io/dmn-js/pull/614))
-* `FIX`: don't lose association when switching from DRD to DMN view ([#1874](https://github.com/camunda/camunda-modeler/issues/1874) and [#2052](https://github.com/camunda/camunda-modeler/issues/2052))
+* `FIX`: don't lose association when switching from DRD to DMN
+  view ([#1874](https://github.com/camunda/camunda-modeler/issues/1874)
+  and [#2052](https://github.com/camunda/camunda-modeler/issues/2052))
 * `CHORE`: bump to `dmn-js@10.1.0-alpha.2`
 
 ## 4.5.0
@@ -75,12 +106,16 @@ ___Note:__ Yet to be released changes appear here._
 * `FEAT`: support versioned element templates ([#1969](https://github.com/camunda/camunda-modeler/issues/1969))
 * `FEAT`: support modeling `isCollection` marker for Data Object ([#381](https://github.com/bpmn-io/bpmn-js/issues/381))
 * `FEAT`: support multi-instance pools ([#533](https://github.com/bpmn-io/bpmn-js/issues/533))
-* `FEAT`: allow to replace Data Store Reference with Data Object Reference ([#1372](https://github.com/bpmn-io/bpmn-js/issues/1372))
+* `FEAT`: allow to replace Data Store Reference with Data Object
+  Reference ([#1372](https://github.com/bpmn-io/bpmn-js/issues/1372))
 * `FIX`: display local element templates in catalog ([#2012](https://github.com/camunda/camunda-modeler/issues/2012))
-* `FIX`: allow to set external resource script value for I/O parameters ([#2007](https://github.com/camunda/camunda-modeler/issues/2007))
+* `FIX`: allow to set external resource script value for I/O
+  parameters ([#2007](https://github.com/camunda/camunda-modeler/issues/2007))
 * `FIX`: escape element template properties ([#2031](https://github.com/camunda/camunda-modeler/issues/2031))
 * `FIX`: rename Collapsed Pool to Empty Pool ([#2022](https://github.com/camunda/camunda-modeler/issues/2022))
-* `FIX`: immediately activate tools when shortcut is pressed ([#664](https://github.com/camunda/camunda-modeler/issues/664), [#1229](https://github.com/camunda/camunda-modeler/issues/1229))
+* `FIX`: immediately activate tools when shortcut is
+  pressed ([#664](https://github.com/camunda/camunda-modeler/issues/664)
+  , [#1229](https://github.com/camunda/camunda-modeler/issues/1229))
 * `CHORE`: update to `bpmn-js@8.0.0`
 
 ### DMN
@@ -91,13 +126,16 @@ ___Note:__ Yet to be released changes appear here._
 
 ### CMMN
 
-* `FEAT`: set default value for `disable-cmmn`-flag to `true` ([#2036](https://github.com/camunda/camunda-modeler/issues/2036)); run with `--no-disable-cmmn` or edit your local [flags.json](./docs/flags) to re-enable CMMN editor
+* `FEAT`: set default value for `disable-cmmn`-flag
+  to `true` ([#2036](https://github.com/camunda/camunda-modeler/issues/2036)); run with `--no-disable-cmmn` or edit your
+  local [flags.json](./docs/flags) to re-enable CMMN editor
 
 ## 4.4.0
 
 ### General
 
-* `FEAT`: enable `Backspace` on MacOS for element removal ([#1989](https://github.com/camunda/camunda-modeler/issues/1989))
+* `FEAT`: enable `Backspace` on MacOS for element
+  removal ([#1989](https://github.com/camunda/camunda-modeler/issues/1989))
 * `FEAT`: enable `SHIFT + click` for multi-selection ([#1964](https://github.com/camunda/camunda-modeler/issues/1964))
 * `FIX`: correct switching between diagram and XML ([#1925](https://github.com/camunda/camunda-modeler/issues/1925))
 * `CHORE`: capture deployment and process variables in telemetry events
@@ -108,10 +146,14 @@ ___Note:__ Yet to be released changes appear here._
 
 ### BPMN
 
-* `FIX`: correct removal of element templates from events ([#1990](https://github.com/camunda/camunda-modeler/issues/1990))
-* `FIX`: unlink incompatible element template during replace ([#1961](https://github.com/camunda/camunda-modeler/issues/1961))
-* `FIX`: store variable events for conditional events in the correct property ([#836](https://github.com/camunda/camunda-modeler/issues/836))
-* `FIX`: re-enable `entriesVisible` property of element templates ([#1975](https://github.com/camunda/camunda-modeler/issues/1975))
+* `FIX`: correct removal of element templates from
+  events ([#1990](https://github.com/camunda/camunda-modeler/issues/1990))
+* `FIX`: unlink incompatible element template during
+  replace ([#1961](https://github.com/camunda/camunda-modeler/issues/1961))
+* `FIX`: store variable events for conditional events in the correct
+  property ([#836](https://github.com/camunda/camunda-modeler/issues/836))
+* `FIX`: re-enable `entriesVisible` property of element
+  templates ([#1975](https://github.com/camunda/camunda-modeler/issues/1975))
 * `FIX`: correct label of start instance tool ([#1777](https://github.com/camunda/camunda-modeler/issues/1777))
 
 ### DMN
@@ -124,9 +166,12 @@ ___Note:__ Yet to be released changes appear here._
 
 ### General
 
-* `FEAT`: add modal menu to search and use element templates ([#1890](https://github.com/camunda/camunda-modeler/issues/1890))
-* `FEAT`: introduce application, linking and unlinking logic of element templates ([#1889](https://github.com/camunda/camunda-modeler/issues/1889))
-* `FIX`: prevent stopPropagation errors in iOS devices ([`0fbbbd1e`](https://github.com/bpmn-io/diagram-js/commit/0fbbbd1e439007d80c47158aa8774be3a592f936))
+* `FEAT`: add modal menu to search and use element
+  templates ([#1890](https://github.com/camunda/camunda-modeler/issues/1890))
+* `FEAT`: introduce application, linking and unlinking logic of element
+  templates ([#1889](https://github.com/camunda/camunda-modeler/issues/1889))
+* `FIX`: prevent stopPropagation errors in iOS
+  devices ([`0fbbbd1e`](https://github.com/bpmn-io/diagram-js/commit/0fbbbd1e439007d80c47158aa8774be3a592f936))
 * `CHORE`: bump to `bpmn-js@7.3.1`
 * `CHORE`: bump to `dmn-js@9.3.1`
 * `CHORE`: bump to `diagram-js@6.7.1`
@@ -134,33 +179,44 @@ ___Note:__ Yet to be released changes appear here._
 
 ### BPMN
 
-* `FEAT`: detect process variables in properties panel ([#348](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/348))
-* `FEAT`: improve input/output mapping GUI component in properties panel ([#349](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/349))
-* `FEAT`: add process variable overview for (sub) processes in properties panel ([#343](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/343))
-* `FEAT`: add process variable typeAhead functionality in properties panel ([#345](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/345))
-* `FEAT`: adjust element template view in properties panel ([#358](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/358))
+* `FEAT`: detect process variables in properties
+  panel ([#348](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/348))
+* `FEAT`: improve input/output mapping GUI component in properties
+  panel ([#349](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/349))
+* `FEAT`: add process variable overview for (sub) processes in properties
+  panel ([#343](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/343))
+* `FEAT`: add process variable typeAhead functionality in properties
+  panel ([#345](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/345))
+* `FEAT`: adjust element template view in properties
+  panel ([#358](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/358))
 * `FEAT`: crop descriptions in properties panel ([#369](https://github.com/bpmn-io/bpmn-js-properties-panel/issues/369))
-* `FIX`: allow incoming message flows to boundary message events ([#1919](https://github.com/camunda/camunda-modeler/issues/1919))
+* `FIX`: allow incoming message flows to boundary message
+  events ([#1919](https://github.com/camunda/camunda-modeler/issues/1919))
 
 ### DMN
 
-* `FEAT`: improve intuition by recognising input and output columns ([#552](https://github.com/bpmn-io/dmn-js/issues/552))
+* `FEAT`: improve intuition by recognising input and output
+  columns ([#552](https://github.com/bpmn-io/dmn-js/issues/552))
 * `FEAT`: move bpmn.io logo ([#573](https://github.com/bpmn-io/dmn-js/issues/573))
 * `FIX`: clear clipboard after pasting ([#1246](https://github.com/camunda/camunda-modeler/issues/1246))
 * `FIX`: handle undoing decision name direct editing ([#1912](https://github.com/camunda/camunda-modeler/issues/1912))
 * `FIX`: handle undoing decision table components ([#1923](https://github.com/camunda/camunda-modeler/issues/1923))
 * `FIX`: handle undoing deletion of decision elements ([#1921](https://github.com/camunda/camunda-modeler/issues/1921))
 * `FIX`: handle undoing via keyboard ([#1922](https://github.com/camunda/camunda-modeler/issues/1922))
-* `FIX`: save the size of resized text annotations in DRD ([#1941](https://github.com/camunda/camunda-modeler/issues/1941))
-* `FIX`: fix broken keyboard shortcuts and menu entries for Undo & Redo in decision tables ([#1843](https://github.com/camunda/camunda-modeler/issues/1843))
+* `FIX`: save the size of resized text annotations in
+  DRD ([#1941](https://github.com/camunda/camunda-modeler/issues/1941))
+* `FIX`: fix broken keyboard shortcuts and menu entries for Undo & Redo in decision
+  tables ([#1843](https://github.com/camunda/camunda-modeler/issues/1843))
 
 ## 4.2.0
 
 ### General
 
-* `FEAT`: include CMMN diagramOpened event in usage-statistics ([#1887](https://github.com/camunda/camunda-modeler/issues/1887))
+* `FEAT`: include CMMN diagramOpened event in
+  usage-statistics ([#1887](https://github.com/camunda/camunda-modeler/issues/1887))
 * `CHORE`: adjust colors to match CAMUNDA color scheme ([#1844](https://github.com/camunda/camunda-modeler/issues/1844))
-* `FEAT`: allow plugins to get element templates from config ([#1893](https://github.com/camunda/camunda-modeler/pull/1893))
+* `FEAT`: allow plugins to get element templates from
+  config ([#1893](https://github.com/camunda/camunda-modeler/pull/1893))
 * `CHORE`: bump to `bpmn-js@7.3.0`
 * `CHORE`: bump to `dmn-js@9.2.0`
 * `CHORE`: bump to `diagram-js@6.7.0`
@@ -174,10 +230,12 @@ ___Note:__ Yet to be released changes appear here._
 * `FIX`: remove unnecessary click event cancel action ([#1907](https://github.com/camunda/camunda-modeler/issues/1907))
 * `FEAT`: center the decision table resize hitbox ([#1906](https://github.com/camunda/camunda-modeler/issues/1906))
 * `FEAT`: remove clause and rule menu entries  ([#1901](https://github.com/camunda/camunda-modeler/issues/1901))
-* `FIX`: hide hit-policy input select on global mousedown event ([#1900](https://github.com/camunda/camunda-modeler/issues/1900))
+* `FIX`: hide hit-policy input select on global mousedown
+  event ([#1900](https://github.com/camunda/camunda-modeler/issues/1900))
 * `FIX`: correct decision table allowed values layout ([#1895](https://github.com/camunda/camunda-modeler/issues/1895))
 * `FIX`: complete direct editing on drill down in DRD ([#1892](https://github.com/camunda/camunda-modeler/issues/1892))
-* `FIX`: correctly display DMN decision table dragging layout ([#1899](https://github.com/camunda/camunda-modeler/issues/1899))
+* `FIX`: correctly display DMN decision table dragging
+  layout ([#1899](https://github.com/camunda/camunda-modeler/issues/1899))
 
 ## 4.1.1
 
@@ -194,11 +252,13 @@ ___Note:__ Yet to be released changes appear here._
 
 ### General
 
-* `FEAT`: send ping and diagram creation events to E.T. telemetrics platform ([#1805](https://github.com/camunda/camunda-modeler/issues/1805))
+* `FEAT`: send ping and diagram creation events to E.T. telemetrics
+  platform ([#1805](https://github.com/camunda/camunda-modeler/issues/1805))
 * `FIX`: send correct source maps with crash reports ([#1813](https://github.com/camunda/camunda-modeler/issues/1831))
 * `FIX`: ensure plugins are correctly sent to Sentry ([#1847](https://github.com/camunda/camunda-modeler/issues/1847))
 * `FIX`: save workspace before quitting ([#1795](https://github.com/camunda/camunda-modeler/issues/1795))
-* `FIX`: ensure space key is working to check / uncheck modal check boxes ([#1692](https://github.com/camunda/camunda-modeler/issues/1692))
+* `FIX`: ensure space key is working to check / uncheck modal check
+  boxes ([#1692](https://github.com/camunda/camunda-modeler/issues/1692))
 * `FIX`: ensure menu is only initiated once ([#1816](https://github.com/camunda/camunda-modeler/issues/1816))
 
 ### BPMN
@@ -209,12 +269,15 @@ ___Note:__ Yet to be released changes appear here._
 ### DMN
 
 * `FEAT`: add DMN overview navigation ([#1767](https://github.com/camunda/camunda-modeler/issues/1767))
-* `FEAT`: set default zoom scale when opening DMN overview ([#1848](https://github.com/camunda/camunda-modeler/issues/1848))
+* `FEAT`: set default zoom scale when opening DMN
+  overview ([#1848](https://github.com/camunda/camunda-modeler/issues/1848))
 * `FEAT`: improve decision table layout ([#494](https://github.com/bpmn-io/dmn-js/issues/494))
 * `FEAT`: improve literal expression layout ([#515](https://github.com/bpmn-io/dmn-js/issues/515))
 * `FEAT`: add ability to resize table columns ([#500](https://github.com/bpmn-io/dmn-js/issues/500))
-* `FIX`: allow association regardless of connection direction ([#1702](https://github.com/camunda/camunda-modeler/issues/1702))
-* `FIX`: ensure select-all is working DMN properties panel ([#1685](https://github.com/camunda/camunda-modeler/issues/1685))
+* `FIX`: allow association regardless of connection
+  direction ([#1702](https://github.com/camunda/camunda-modeler/issues/1702))
+* `FIX`: ensure select-all is working DMN properties
+  panel ([#1685](https://github.com/camunda/camunda-modeler/issues/1685))
 * `CHORE`: bump to `dmn-js@9.0.0`
 
 ## 4.0.0
@@ -274,32 +337,39 @@ ___Note:__ Yet to be released changes appear here._
 
 #### General
 
-* `FIX`: delayed validation in deployment tool after reopening the dialog ([#1741](https://github.com/camunda/camunda-modeler/issues/1741))
+* `FIX`: delayed validation in deployment tool after reopening the
+  dialog ([#1741](https://github.com/camunda/camunda-modeler/issues/1741))
 
 ## 4.0.0-alpha.0
 
 #### General
 
 * `FEAT`: new loading indicator ([#1719](https://github.com/camunda/camunda-modeler/issues/1719))
-* `FEAT`: completely overhauled UX of the deployment diagram ([#1709](https://github.com/camunda/camunda-modeler/issues/1709))
+* `FEAT`: completely overhauled UX of the deployment
+  diagram ([#1709](https://github.com/camunda/camunda-modeler/issues/1709))
 * `FEAT`: save and restore window size ([#576](https://github.com/camunda/camunda-modeler/issues/576))
 * `FEAT`: apply native keyboard shortcuts in log panel ([#1380](https://github.com/camunda/camunda-modeler/issues/1380))
-* `CHORE`: dialogs to return response instead of button ([`42d0ecc`](https://github.com/camunda/camunda-modeler/commit/42d0eccfae6143f472ec60b0280c7267b7d5a4e5))
+* `CHORE`: dialogs to return response instead of
+  button ([`42d0ecc`](https://github.com/camunda/camunda-modeler/commit/42d0eccfae6143f472ec60b0280c7267b7d5a4e5))
 * `CHORE`: remove watermark ([#1731](https://github.com/camunda/camunda-modeler/issues/1731))
 
 #### DMN
 
 * `FEAT`: support for opening DMN 1.2 and DMN 1.3 diagrams
 * `FEAT`: migrate DMN 1.1 diagrams to DMN 1.3 on diagram open
-* `FEAT`: migrate DMN diagrams to DMN 1.3 on export ([`7eb32a8`](https://github.com/camunda/camunda-modeler/commit/7eb32a80508c214c63257795b37dc430778871f3))
-* `FEAT`: add resizing to DRD ([`3dd1265`](https://github.com/bpmn-io/dmn-js/commit/3dd12659bcc13abeb7e27cbcc9564a8171890abc))
+* `FEAT`: migrate DMN diagrams to DMN 1.3 on
+  export ([`7eb32a8`](https://github.com/camunda/camunda-modeler/commit/7eb32a80508c214c63257795b37dc430778871f3))
+* `FEAT`: add resizing to
+  DRD ([`3dd1265`](https://github.com/bpmn-io/dmn-js/commit/3dd12659bcc13abeb7e27cbcc9564a8171890abc))
 * `FEAT`: improve DRD label editing ([#213](https://github.com/bpmn-io/dmn-js/issues/213))
 * `FEAT`: set FEEL as default expression language ([#1710](https://github.com/camunda/camunda-modeler/issues/1710))
 * `CHORE`: bump to `dmn-js@8.2.0`
 
 ### Breaking Changes
 
-* DMN editor is migrated to DMN 1.3. Users will be able to open DMN 1.1 and DMN 1.2 diagrams, however exported diagrams will automatically be migrated to DMN 1.3. ([`7eb32a8`](https://github.com/camunda/camunda-modeler/commit/7eb32a80508c214c63257795b37dc430778871f3))
+* DMN editor is migrated to DMN 1.3. Users will be able to open DMN 1.1 and DMN 1.2 diagrams, however exported diagrams
+  will automatically be migrated to DMN
+  1.3. ([`7eb32a8`](https://github.com/camunda/camunda-modeler/commit/7eb32a80508c214c63257795b37dc430778871f3))
 * This release is compatible with Camunda BPM versions 7.13.0, 7.12.4, 7.11.11, 7.10.17 and above.
 
 ## 3.7.1
@@ -308,7 +378,8 @@ ___Note:__ Yet to be released changes appear here._
 
 * `FIX`: correctly export as image on Linux ([#1699](https://github.com/camunda/camunda-modeler/issues/1699))
 * `FIX`: always paste as plain text to properties panels
-* `CHORE`: make sure to daily check for updates if enabled ([`d2bf6a6`](https://github.com/camunda/camunda-modeler/commit/d2bf6a6fc147b73ecacaebdda7a334503d8c8928))
+* `CHORE`: make sure to daily check for updates if
+  enabled ([`d2bf6a6`](https://github.com/camunda/camunda-modeler/commit/d2bf6a6fc147b73ecacaebdda7a334503d8c8928))
 
 #### BPMN
 
@@ -321,7 +392,8 @@ ___Note:__ Yet to be released changes appear here._
 #### DMN
 
 * `FEAT(decision-table)`: add new rule on bottom rule \<enter> ([#345](https://github.com/bpmn-io/dmn-js/issues/345))
-* `FEAT(drd)`: activate direct editing after text annotation create ([#185](https://github.com/bpmn-io/dmn-js/issues/185))
+* `FEAT(drd)`: activate direct editing after text annotation
+  create ([#185](https://github.com/bpmn-io/dmn-js/issues/185))
 * `FIX`: update association's refs on element id change ([#397](https://github.com/bpmn-io/dmn-js/issues/397))
 * `CHORE`:  update to `dmn-js@7.5.0`
 
@@ -329,12 +401,16 @@ ___Note:__ Yet to be released changes appear here._
 
 #### General
 
-* `FEAT`: disable deploy button if config is not valid ([`050fcdf`](https://github.com/camunda/camunda-modeler/commit/050fcdf364b4a9dc4aaad894c48b79d1c06e2050))
-* `FEAT`: support Camunda Spring Boot starter per default ([#1610](https://github.com/camunda/camunda-modeler/issues/1610))
-* `FEAT`: redeploy when running process with new config ([`b4f18fe`](https://github.com/camunda/camunda-modeler/commit/b4f18fe47d4c27ed7e4b8aaec789749c4c11bbbd))
+* `FEAT`: disable deploy button if config is not
+  valid ([`050fcdf`](https://github.com/camunda/camunda-modeler/commit/050fcdf364b4a9dc4aaad894c48b79d1c06e2050))
+* `FEAT`: support Camunda Spring Boot starter per
+  default ([#1610](https://github.com/camunda/camunda-modeler/issues/1610))
+* `FEAT`: redeploy when running process with new
+  config ([`b4f18fe`](https://github.com/camunda/camunda-modeler/commit/b4f18fe47d4c27ed7e4b8aaec789749c4c11bbbd))
 * `FEAT`: improve look and responsiveness of modals ([#1681](https://github.com/camunda/camunda-modeler/issues/1681))
 * `FEAT`: remove support for Linux 32bit platforms ([#1683](https://github.com/camunda/camunda-modeler/pull/1683))
-* `FIX`: check for executable process before deploy and run ([#1671](https://github.com/camunda/camunda-modeler/issues/1671))
+* `FIX`: check for executable process before deploy and
+  run ([#1671](https://github.com/camunda/camunda-modeler/issues/1671))
 * `CHORE`: move modal styles to global ([#1691](https://github.com/camunda/camunda-modeler/pull/1691))
 * `CHORE`: update to `electron@7.1.12`
 
@@ -350,7 +426,8 @@ ___Note:__ Yet to be released changes appear here._
 
 * `FEAT`: add alignment buttons and snapping ([#1669](https://github.com/camunda/camunda-modeler/issues/1669))
 * `FEAT`: add support for DMN Editor plugins ([#1550](https://github.com/camunda/camunda-modeler/pull/1550))
-* `FIX`: do not display placeholder for input fields in table ([#1677](https://github.com/camunda/camunda-modeler/issues/1677))
+* `FIX`: do not display placeholder for input fields in
+  table ([#1677](https://github.com/camunda/camunda-modeler/issues/1677))
 * `FIX`: update XML correctly when changing id ([#1679](https://github.com/camunda/camunda-modeler/issues/1679))
 * `FIX`: correct DMN Editor scrolling ([#1687](https://github.com/camunda/camunda-modeler/issues/1687))
 * `CHORE`: update to `dmn-js@7.4.3`
@@ -360,13 +437,17 @@ ___Note:__ Yet to be released changes appear here._
 #### General
 
 * `FEAT`: add automatic update checks ([#1541](https://github.com/camunda/camunda-modeler/issues/1541))
-* `FEAT`: allow to run BPMN processes directly from the app ([#1552](https://github.com/camunda/camunda-modeler/issues/1552))
+* `FEAT`: allow to run BPMN processes directly from the
+  app ([#1552](https://github.com/camunda/camunda-modeler/issues/1552))
 * `FEAT`: make user data directory configurable ([#1625](https://github.com/camunda/camunda-modeler/issues/1625))
-* `FIX`: make it possible to export huge diagrams as PNGs ([#1591](https://github.com/camunda/camunda-modeler/issues/1591))
+* `FIX`: make it possible to export huge diagrams as
+  PNGs ([#1591](https://github.com/camunda/camunda-modeler/issues/1591))
 * `FIX`: do not swallow warnings on editor open errors ([#1522](https://github.com/camunda/camunda-modeler/issues/1522))
-* `FIX`: prevent illegal IDs from being entered in the properties panels ([#1623](https://github.com/camunda/camunda-modeler/issues/1623))
+* `FIX`: prevent illegal IDs from being entered in the properties
+  panels ([#1623](https://github.com/camunda/camunda-modeler/issues/1623))
 * `CHORE`: add clear primary / secondary actions for all dialogs
-* `CHORE`: update to `Electron@7` as new app foundation ([#1448](https://github.com/camunda/camunda-modeler/issues/1448), [#1607](https://github.com/camunda/camunda-modeler/issues/1607))
+* `CHORE`: update to `Electron@7` as new app foundation ([#1448](https://github.com/camunda/camunda-modeler/issues/1448)
+  , [#1607](https://github.com/camunda/camunda-modeler/issues/1607))
 
 #### BPMN
 
@@ -374,48 +455,63 @@ ___Note:__ Yet to be released changes appear here._
 * `FEAT`: add horizontal and vertical resize handles
 * `FEAT`: improve connection cropping
 * `FIX`: correct creation of nested lanes ([#1617](https://github.com/camunda/camunda-modeler/issues/1617))
-* `FIX`: disable re-layout behaviors on paste (paste as copied) ([#1611](https://github.com/camunda/camunda-modeler/issues/1611))
-* `FIX`: do not open replace menu after multi-element create ([#1613](https://github.com/camunda/camunda-modeler/issues/1613))
+* `FIX`: disable re-layout behaviors on paste (paste as
+  copied) ([#1611](https://github.com/camunda/camunda-modeler/issues/1611))
+* `FIX`: do not open replace menu after multi-element
+  create ([#1613](https://github.com/camunda/camunda-modeler/issues/1613))
 * `FIX`: render colored `bpmn:Group` elements
-* `FIX`: correct origin snapping on multi-element create ([#1612](https://github.com/camunda/camunda-modeler/issues/1612))
+* `FIX`: correct origin snapping on multi-element
+  create ([#1612](https://github.com/camunda/camunda-modeler/issues/1612))
 * `FIX`: properly reconnect message flows when collapsing participant
 * `FIX`: keep non-duplicate outgoing connections when dropping on flow
 * `FIX`: correct serialization of `DataAssociation#assignmet`
-* `FIX`: allow `bpmn:Association` where `bpmn:DataAssociation` is allowed, too ([#1635](https://github.com/camunda/camunda-modeler/issues/1635))
+* `FIX`: allow `bpmn:Association` where `bpmn:DataAssociation` is allowed,
+  too ([#1635](https://github.com/camunda/camunda-modeler/issues/1635))
 * `CHORE`: update to `bpmn-js@6.2.1`
 
 ## 3.5.0
 
 #### General
 
-* `FEAT`: remember authentication details ([`eb35b078`](https://github.com/camunda/camunda-modeler/commit/eb35b07872b7a77936399532c99a7f485b99b012))
+* `FEAT`: remember authentication
+  details ([`eb35b078`](https://github.com/camunda/camunda-modeler/commit/eb35b07872b7a77936399532c99a7f485b99b012))
 * `FEAT`: notarize MacOS distribution ([#1585](https://github.com/camunda/camunda-modeler/pull/1585))
-* `FEAT`: trap focus and escape key in modal ([`4df45940`](https://github.com/camunda/camunda-modeler/commit/4df459409b893cc72e1287a04234511331e3adfe))
-* `FEAT`: allow nodeIntegration to be enabled via feature toggle ([`c7f93c05`](https://github.com/camunda/camunda-modeler/commit/c7f93c05ad99dc400b2a259f88e0ad96de641aed))
-* `FIX`: do not scroll clear/close controls ([`20b8dbfc`](https://github.com/camunda/camunda-modeler/commit/20b8dbfc2874238e7b5edc7256f63e3ad3282d9a))
-* `CHORE`: prefix log messages with level ([`c741c41e`](https://github.com/camunda/camunda-modeler/commit/c741c41e3bbcfcf1176a783a9372006d16dcb688))
+* `FEAT`: trap focus and escape key in
+  modal ([`4df45940`](https://github.com/camunda/camunda-modeler/commit/4df459409b893cc72e1287a04234511331e3adfe))
+* `FEAT`: allow nodeIntegration to be enabled via feature
+  toggle ([`c7f93c05`](https://github.com/camunda/camunda-modeler/commit/c7f93c05ad99dc400b2a259f88e0ad96de641aed))
+* `FIX`: do not scroll clear/close
+  controls ([`20b8dbfc`](https://github.com/camunda/camunda-modeler/commit/20b8dbfc2874238e7b5edc7256f63e3ad3282d9a))
+* `CHORE`: prefix log messages with
+  level ([`c741c41e`](https://github.com/camunda/camunda-modeler/commit/c741c41e3bbcfcf1176a783a9372006d16dcb688))
 * `CHORE`: bump to `diagram-js@6.0.4`
 * `CHORE`: bump to `bpmn-js@6.0.2`
 * `CHORE`: bump to `dmn-js@7.2.1`
 
 #### BPMN
 
-* `FEAT`: connecting and re-connecting shapes is now possible in both directions ([#1230](https://github.com/bpmn-io/bpmn-js/pull/1230))
+* `FEAT`: connecting and re-connecting shapes is now possible in both
+  directions ([#1230](https://github.com/bpmn-io/bpmn-js/pull/1230))
 * `FIX`: render colored BPMN groups ([#1246](https://github.com/bpmn-io/bpmn-js/pull/1246))
 
 ### Breaking Changes
 
-* `FEAT`: disable collapsing sub process ([`a2c008d0`](https://github.com/camunda/camunda-modeler/commit/a2c008d09effe200c857ec36a20889ae4dde598a))
+* `FEAT`: disable collapsing sub
+  process ([`a2c008d0`](https://github.com/camunda/camunda-modeler/commit/a2c008d09effe200c857ec36a20889ae4dde598a))
 
 #### DMN
 
 * `FEAT(decision-table)`: preserve aggregation when COLLECT is selected again
-* `FEAT(decision-table)`: allow aggreation to be cleared from dropdown ([#370](https://github.com/bpmn-io/dmn-js/issues/370), [#389](https://github.com/bpmn-io/dmn-js/issues/389))
-* `FEAT(decision-table)`: use JUEL as the default input expression language ([#405](https://github.com/bpmn-io/dmn-js/issues/405))
+* `FEAT(decision-table)`: allow aggreation to be cleared from
+  dropdown ([#370](https://github.com/bpmn-io/dmn-js/issues/370), [#389](https://github.com/bpmn-io/dmn-js/issues/389))
+* `FEAT(decision-table)`: use JUEL as the default input expression
+  language ([#405](https://github.com/bpmn-io/dmn-js/issues/405))
 * `FIX(decision-table)`: correctly handle value erasing ([#826](https://github.com/camunda/camunda-modeler/issues/826))
-* `FIX(decision-table)`: correctly display simple mode edit control when cell selection changes ([#341](https://github.com/bpmn-io/dmn-js/issues/341))
+* `FIX(decision-table)`: correctly display simple mode edit control when cell selection
+  changes ([#341](https://github.com/bpmn-io/dmn-js/issues/341))
 * `FIX(decision-table)`: do not close input on user selection ([#421](https://github.com/bpmn-io/dmn-js/issues/421))
-* `FIX(decision-table)`: do not navigate when clearing pre-defined hints ([#431](https://github.com/bpmn-io/dmn-js/issues/431))
+* `FIX(decision-table)`: do not navigate when clearing pre-defined
+  hints ([#431](https://github.com/bpmn-io/dmn-js/issues/431))
 * `FIX(decision-table)`: prevent context menu jump in larger tables
 * `FIX(decision-table)`: do not close context on user selection
 
@@ -432,7 +528,8 @@ ___Note:__ Yet to be released changes appear here._
 #### General
 
 * `FEAT`: add reusable notifications mechanism ([#1505](https://github.com/camunda/camunda-modeler/issues/1505))
-* `FEAT`: allow access to workspace configurations for plugins and files ([#1425](https://github.com/camunda/camunda-modeler/issues/1425))
+* `FEAT`: allow access to workspace configurations for plugins and
+  files ([#1425](https://github.com/camunda/camunda-modeler/issues/1425))
 * `FIX`: complete direct editing on save operation ([#1473](https://github.com/camunda/camunda-modeler/issues/1473))
 * `FIX`: correct autofocusing in modals ([#1489](https://github.com/camunda/camunda-modeler/pull/1489))
 * `CHORE`: bump to `bpmn-js@5.1.0` / `diagram-js@5.1.0`
@@ -440,32 +537,39 @@ ___Note:__ Yet to be released changes appear here._
 #### BPMN
 
 * `FIX`: correct duplicated references in lanes ([#1504](https://github.com/camunda/camunda-modeler/issues/1504))
-* `FIX`: keep sequence flow conditions after morphing source or target ([#180](https://github.com/camunda/camunda-modeler/issues/180))
-* `FIX`: do not show preview if create operation is not allowed ([#1481](https://github.com/camunda/camunda-modeler/issues/1481))
-* `FIX`: be able to paste elements on previously removed areas ([#1466](https://github.com/camunda/camunda-modeler/issues/1466))
+* `FIX`: keep sequence flow conditions after morphing source or
+  target ([#180](https://github.com/camunda/camunda-modeler/issues/180))
+* `FIX`: do not show preview if create operation is not
+  allowed ([#1481](https://github.com/camunda/camunda-modeler/issues/1481))
+* `FIX`: be able to paste elements on previously removed
+  areas ([#1466](https://github.com/camunda/camunda-modeler/issues/1466))
 
 #### Deployment
 
 * `FEAT`: remember deployment details with diagram ([#1066](https://github.com/camunda/camunda-modeler/issues/1066))
 * `FEAT`: display readable error message in log ([#1426](https://github.com/camunda/camunda-modeler/issues/1426))
-* `FEAT`: derive default deployment name from the filename ([#1511](https://github.com/camunda/camunda-modeler/pull/1511))
+* `FEAT`: derive default deployment name from the
+  filename ([#1511](https://github.com/camunda/camunda-modeler/pull/1511))
 * `FEAT`: deployment tool as a client extension ([#1488](https://github.com/camunda/camunda-modeler/issues/1488))
 
 #### Plugins
 
 * `FEAT`: add extension point for UI plugins ([#1490](https://github.com/camunda/camunda-modeler/issues/1490))
 * Introduce several application events to hook into:
-    * <tab.saved> ([#1498](https://github.com/camunda/camunda-modeler/pull/1498))
-    * <tab.activeSheetChanged> ([`403afc`](https://github.com/camunda/camunda-modeler/commit/403afc920cf6c745816c3cd456baeb99830b25ed))
-    * <app.activeTabChanged> ([`403afc`](https://github.com/camunda/camunda-modeler/commit/403afc920cf6c745816c3cd456baeb99830b25ed))
-    * <bpmn.modeler.configure> ([#1499](https://github.com/camunda/camunda-modeler/issues/1499))
-    * <bpmn.modeler.created> ([#1500](https://github.com/camunda/camunda-modeler/issues/1500))
+  * <tab.saved> ([#1498](https://github.com/camunda/camunda-modeler/pull/1498))
+  * <
+    tab.activeSheetChanged> ([`403afc`](https://github.com/camunda/camunda-modeler/commit/403afc920cf6c745816c3cd456baeb99830b25ed))
+  * <
+    app.activeTabChanged> ([`403afc`](https://github.com/camunda/camunda-modeler/commit/403afc920cf6c745816c3cd456baeb99830b25ed))
+  * <bpmn.modeler.configure> ([#1499](https://github.com/camunda/camunda-modeler/issues/1499))
+  * <bpmn.modeler.created> ([#1500](https://github.com/camunda/camunda-modeler/issues/1500))
 
 ## 3.3.5
 
 * `FIX`: snap connections to shape center ([#1436](https://github.com/camunda/camunda-modeler/issues/1436))
 * `FIX`: apply labels when using context pad ([#1502](https://github.com/camunda/camunda-modeler/issues/1502))
-* `FIX`: do not copy extension elements with unknown type ([#1507](https://github.com/camunda/camunda-modeler/issues/1507))
+* `FIX`: do not copy extension elements with unknown
+  type ([#1507](https://github.com/camunda/camunda-modeler/issues/1507))
 
 ## 3.3.4
 
@@ -490,26 +594,43 @@ ___Note:__ Yet to be released changes appear here._
 #### General
 
 * `FIX`: correct find shortcut not working ([#1450](https://github.com/camunda/camunda-modeler/issues/1450))
-* `FIX`: restore paste shortcut not working in XML view ([#814](https://github.com/camunda/camunda-modeler/issues/814), [#868](https://github.com/camunda/camunda-modeler/issues/868))
-* `CHORE`: disable node integration in client application ([#1453](https://github.com/camunda/camunda-modeler/pull/1453))
+* `FIX`: restore paste shortcut not working in XML view ([#814](https://github.com/camunda/camunda-modeler/issues/814)
+  , [#868](https://github.com/camunda/camunda-modeler/issues/868))
+* `CHORE`: disable node integration in client
+  application ([#1453](https://github.com/camunda/camunda-modeler/pull/1453))
 
 #### BPMN
 
 * `FEAT`: add two-step copy and paste ([#1421](https://github.com/camunda/camunda-modeler/issues/1421))
-* `FEAT`: make participants and expanded sub-processes draggable on borders and headers/labels only ([#238](https://github.com/camunda/camunda-modeler/issues/238))
-* `FEAT`: improve navigation inside large participants / sub-processes ([#238](https://github.com/camunda/camunda-modeler/issues/238))
-* `FEAT`: allow editing of `camunda:errorMessage` on `bpmn:Error` elements ([#1333](https://github.com/camunda/camunda-modeler/issues/1333))
+* `FEAT`: make participants and expanded sub-processes draggable on borders and headers/labels
+  only ([#238](https://github.com/camunda/camunda-modeler/issues/238))
+* `FEAT`: improve navigation inside large participants /
+  sub-processes ([#238](https://github.com/camunda/camunda-modeler/issues/238))
+* `FEAT`: allow editing of `camunda:errorMessage` on `bpmn:Error`
+  elements ([#1333](https://github.com/camunda/camunda-modeler/issues/1333))
 * `FEAT`: add generic editor extension point ([#1434](https://github.com/camunda/camunda-modeler/pull/1434))
 * `FEAT`: activate hand tool on `SPACE` ([#1475](https://github.com/camunda/camunda-modeler/pull/1475))
-* `FIX`: allow participant to participant message flows to be copied ([#1413](https://github.com/camunda/camunda-modeler/issues/1413))
+* `FIX`: allow participant to participant message flows to be
+  copied ([#1413](https://github.com/camunda/camunda-modeler/issues/1413))
 * `FIX`: do not update label positions when pasting ([#1325](https://github.com/camunda/camunda-modeler/issues/1325))
-* `FIX`: keep allowed implementation details on copy and replace ([#681](https://github.com/camunda/camunda-modeler/issues/681), [#540](https://github.com/camunda/camunda-modeler/issues/540), [#647](https://github.com/camunda/camunda-modeler/issues/647), [#678](https://github.com/camunda/camunda-modeler/issues/678), [#538](https://github.com/camunda/camunda-modeler/issues/538), [#586](https://github.com/camunda/camunda-modeler/issues/586), [#537](https://github.com/camunda/camunda-modeler/issues/537), [#1464](https://github.com/camunda/camunda-modeler/issues/1464))
-* `FIX`: allow editing of `camunda:InputOutput` in places supported by Camunda only ([#491](https://github.com/camunda/camunda-modeler/issues/491))
-* `FIX`: make `camunda:failedJobsRetryTimeCycle` available consistently ([#1465](https://github.com/camunda/camunda-modeler/issues/1465))
+* `FIX`: keep allowed implementation details on copy and
+  replace ([#681](https://github.com/camunda/camunda-modeler/issues/681)
+  , [#540](https://github.com/camunda/camunda-modeler/issues/540)
+  , [#647](https://github.com/camunda/camunda-modeler/issues/647)
+  , [#678](https://github.com/camunda/camunda-modeler/issues/678)
+  , [#538](https://github.com/camunda/camunda-modeler/issues/538)
+  , [#586](https://github.com/camunda/camunda-modeler/issues/586)
+  , [#537](https://github.com/camunda/camunda-modeler/issues/537)
+  , [#1464](https://github.com/camunda/camunda-modeler/issues/1464))
+* `FIX`: allow editing of `camunda:InputOutput` in places supported by Camunda
+  only ([#491](https://github.com/camunda/camunda-modeler/issues/491))
+* `FIX`: make `camunda:failedJobsRetryTimeCycle` available
+  consistently ([#1465](https://github.com/camunda/camunda-modeler/issues/1465))
 
 #### Deploy
 
-* `FEAT`: pre-fill deploy dialog with sensible defaults ([#1441](https://github.com/camunda/camunda-modeler/issues/1441))
+* `FEAT`: pre-fill deploy dialog with sensible
+  defaults ([#1441](https://github.com/camunda/camunda-modeler/issues/1441))
 
 ## 3.2.3
 
@@ -519,33 +640,45 @@ ___Note:__ Yet to be released changes appear here._
 ## 3.2.2
 
 * `FIX`: make align-to-origin grid-aware
-* `FIX`: allow deploy dialog to be closed without warnings ([#1405](https://github.com/camunda/camunda-modeler/issues/1405))
+* `FIX`: allow deploy dialog to be closed without
+  warnings ([#1405](https://github.com/camunda/camunda-modeler/issues/1405))
 
 ## 3.2.1
 
-* `FIX`: prevent dropping on labels and groups in BPMN editor ([#1431](https://github.com/camunda/camunda-modeler/issues/1431))
+* `FIX`: prevent dropping on labels and groups in BPMN
+  editor ([#1431](https://github.com/camunda/camunda-modeler/issues/1431))
 
 ## 3.2.0
 
 #### General
 
-* `FIX`: update properties panels to mitigate HTML injection vulnerabilities ([`1ed7caa2c`](https://github.com/camunda/camunda-modeler/commit/1ed7caa2ce3fe1a66b4b5786afbd63c1e54b9700), [blog post](https://bpmn.io/blog/posts/2019-html-injection-vulnerabilities-properties-panels-fixed.html))
+* `FIX`: update properties panels to mitigate HTML injection
+  vulnerabilities ([`1ed7caa2c`](https://github.com/camunda/camunda-modeler/commit/1ed7caa2ce3fe1a66b4b5786afbd63c1e54b9700)
+  , [blog post](https://bpmn.io/blog/posts/2019-html-injection-vulnerabilities-properties-panels-fixed.html))
 * `CHORE`: validate that XML IDs for imported documents are valid [QNames](https://www.w3.org/2001/tag/doc/qnameids)
 
 #### BPMN
 
-* `FEAT`: add snap on resize ([#1290](https://github.com/camunda/camunda-modeler/issues/1290), [#609](https://github.com/camunda/camunda-modeler/issues/609), [#608](https://github.com/camunda/camunda-modeler/issues/608))
+* `FEAT`: add snap on resize ([#1290](https://github.com/camunda/camunda-modeler/issues/1290)
+  , [#609](https://github.com/camunda/camunda-modeler/issues/609)
+  , [#608](https://github.com/camunda/camunda-modeler/issues/608))
 * `FEAT`: add ability to model `bpmn:Group` elements ([#464](https://github.com/camunda/camunda-modeler/issues/464))
-* `FEAT`: add `bpmn:Subprocess` with start event included ([#1242](https://github.com/camunda/camunda-modeler/issues/1242))
+* `FEAT`: add `bpmn:Subprocess` with start event
+  included ([#1242](https://github.com/camunda/camunda-modeler/issues/1242))
 * `FEAT`: make it easer to segment move ([#1197](https://github.com/camunda/camunda-modeler/issues/1197))
-* `FEAT`: improve automatic label adjustment for boundary events ([#1206](https://github.com/camunda/camunda-modeler/issues/1206))
-* `FEAT`: disallow multiple incoming connections on event-based gateway targets ([#637](https://github.com/camunda/camunda-modeler/issues/637))
-* `FEAT`: improve layouting of boundary to activity loops ([#903](https://github.com/camunda/camunda-modeler/issues/903))
+* `FEAT`: improve automatic label adjustment for boundary
+  events ([#1206](https://github.com/camunda/camunda-modeler/issues/1206))
+* `FEAT`: disallow multiple incoming connections on event-based gateway
+  targets ([#637](https://github.com/camunda/camunda-modeler/issues/637))
+* `FEAT`: improve layouting of boundary to activity
+  loops ([#903](https://github.com/camunda/camunda-modeler/issues/903))
 * `FEAT`: add grid snapping ([#1019](https://github.com/camunda/camunda-modeler/issues/1019))
 * `FEAT`: add connection previews
-* `FIX`: make message flow attachable to participants with lanes ([#1213](https://github.com/camunda/camunda-modeler/issues/1213))
+* `FIX`: make message flow attachable to participants with
+  lanes ([#1213](https://github.com/camunda/camunda-modeler/issues/1213))
 * `FIX`: fix errors disappearing when adding colors ([#1342](https://github.com/camunda/camunda-modeler/issues/1342))
-* `FIX`: correct name / id alignment in properties panel ([#1151](https://github.com/camunda/camunda-modeler/issues/1151))
+* `FIX`: correct name / id alignment in properties
+  panel ([#1151](https://github.com/camunda/camunda-modeler/issues/1151))
 * `FIX`: prevent unnecessary bendpoints ([#1204](https://github.com/camunda/camunda-modeler/issues/1204))
 * `CHORE`: update to `bpmn-js@4.0.2`
 
@@ -557,25 +690,30 @@ ___Note:__ Yet to be released changes appear here._
 ## 3.1.2
 
 * `FIX`: load local element templates ([#1379](https://github.com/camunda/camunda-modeler/pull/1379))
-* `FIX`: apply default element templates only to new diagrams ([#1388](https://github.com/camunda/camunda-modeler/pull/1388))
+* `FIX`: apply default element templates only to new
+  diagrams ([#1388](https://github.com/camunda/camunda-modeler/pull/1388))
 
 ## 3.1.1
 
-* `FIX`: fix misleading log usage when `single-instance` flag is set to false ([#1363](https://github.com/camunda/camunda-modeler/issues/1363))
+* `FIX`: fix misleading log usage when `single-instance` flag is set to
+  false ([#1363](https://github.com/camunda/camunda-modeler/issues/1363))
 
 ## 3.1.0
 
 #### General
 
 * `FIX`: restore keyboard shortcuts modal ([#1358](https://github.com/camunda/camunda-modeler/issues/1358))
-* `FIX`: ignore `NODE_ENV` environment variable in production build ([#1352](https://github.com/camunda/camunda-modeler/issues/1352))
-* `FIX`: keep changes when moving back and forth between unsafed tabs ([#1347](https://github.com/camunda/camunda-modeler/issues/1347))
+* `FIX`: ignore `NODE_ENV` environment variable in production
+  build ([#1352](https://github.com/camunda/camunda-modeler/issues/1352))
+* `FIX`: keep changes when moving back and forth between unsafed
+  tabs ([#1347](https://github.com/camunda/camunda-modeler/issues/1347))
 
 #### BPMN
 
 * `FEAT`: show `DataInput` / `DataOutput` labels ([#1324](https://github.com/camunda/camunda-modeler/issues/1324))
 * `FEAT`: allow basic `DataInput` / `DataOutput` move
-* `FIX`: prevent unnecessary dirty state without actual label update ([#858](https://github.com/camunda/camunda-modeler/issues/858))
+* `FIX`: prevent unnecessary dirty state without actual label
+  update ([#858](https://github.com/camunda/camunda-modeler/issues/858))
 * `CHORE`: update to `bpmn-js@3.3.1`
 
 ## 3.0.1
@@ -587,7 +725,8 @@ ___Note:__ Yet to be released changes appear here._
 #### General
 
 * `CHORE`: update to `electron@3.1.7`
-* `FIX`: show open file error dialog if tab couldn't be created ([#1320](https://github.com/camunda/camunda-modeler/pull/1320))
+* `FIX`: show open file error dialog if tab couldn't be
+  created ([#1320](https://github.com/camunda/camunda-modeler/pull/1320))
 * `FIX`: fix DMN navigation ([#1321](https://github.com/camunda/camunda-modeler/pull/1321))
 * `FIX`: update lastXML on xml prop change ([#1323](https://github.com/camunda/camunda-modeler/pull/1323))
 
@@ -599,31 +738,42 @@ ___Note:__ Yet to be released changes appear here._
 
 #### General
 
-* `FEAT`: resize tab whenever app layout changes ([`8592eb4`](https://github.com/camunda/camunda-modeler/commit/8592eb479ba41fb3406416d91b84bd42d8439a4e))
+* `FEAT`: resize tab whenever app layout
+  changes ([`8592eb4`](https://github.com/camunda/camunda-modeler/commit/8592eb479ba41fb3406416d91b84bd42d8439a4e))
 * `FEAT`: mark file as unsaved if user cancels update ([#1188](https://github.com/camunda/camunda-modeler/issues/1188))
 * `FEAT`: display error tab when editor fails ([#1214](https://github.com/camunda/camunda-modeler/issues/1214))
 * `FEAT`: provide relevant context for tab errors ([#1176](https://github.com/camunda/camunda-modeler/issues/1176))
-* `FEAT`: log mapped stack trace for errors ([`60393fe`](https://github.com/camunda/camunda-modeler/commit/60393fe0675359d304267601107e4c9e33cb53a6))
+* `FEAT`: log mapped stack trace for
+  errors ([`60393fe`](https://github.com/camunda/camunda-modeler/commit/60393fe0675359d304267601107e4c9e33cb53a6))
 * `FEAT`: restore _Diagram opened with warnings_ hint ([#1177](https://github.com/camunda/camunda-modeler/issues/1177))
-* `FEAT`: add simple way to restart editor without plug-ins ([#1253](https://github.com/camunda/camunda-modeler/issues/1253))
+* `FEAT`: add simple way to restart editor without
+  plug-ins ([#1253](https://github.com/camunda/camunda-modeler/issues/1253))
 * `CHORE`: add license headers to all source files ([#1231](https://github.com/camunda/camunda-modeler/issues/1231))
 * `CHORE`: add THIRD_PARTY_NOTICES ([#1233](https://github.com/camunda/camunda-modeler/issues/1233))
-* `FIX`: only show plug-ins menu if plug-ins are registered ([#1239](https://github.com/camunda/camunda-modeler/issues/1239))
+* `FIX`: only show plug-ins menu if plug-ins are
+  registered ([#1239](https://github.com/camunda/camunda-modeler/issues/1239))
 * `FIX`: restore menu state backwards compatibility ([#1193](https://github.com/camunda/camunda-modeler/issues/1193))
-* `FIX`: disable _reopen last tab_ menu button when there is no last tab ([#1173](https://github.com/camunda/camunda-modeler/issues/1173))
+* `FIX`: disable _reopen last tab_ menu button when there is no last
+  tab ([#1173](https://github.com/camunda/camunda-modeler/issues/1173))
 * `FIX`: disable _save as_ menu button for empty tab ([#1282](https://github.com/camunda/camunda-modeler/issues/1282))
-* `FIX`: import xml to editor only when it is changed ([`3f9cdaf`](https://github.com/camunda/camunda-modeler/commit/3f9cdafaad85eb4907c8cbe03a5230ffc4960456), [#1298](https://github.com/camunda/camunda-modeler/issues/1298))
-* `FIX`: allow well-known files to be dropped ([`46ae9b1`](https://github.com/camunda/camunda-modeler/commit/46ae9b1bf44b52c92f3a7cd8f2cf875593aca51c))
+* `FIX`: import xml to editor only when it is
+  changed ([`3f9cdaf`](https://github.com/camunda/camunda-modeler/commit/3f9cdafaad85eb4907c8cbe03a5230ffc4960456)
+  , [#1298](https://github.com/camunda/camunda-modeler/issues/1298))
+* `FIX`: allow well-known files to be
+  dropped ([`46ae9b1`](https://github.com/camunda/camunda-modeler/commit/46ae9b1bf44b52c92f3a7cd8f2cf875593aca51c))
 * `FIX`: restore empty file dialog ([#1301](https://github.com/camunda/camunda-modeler/issues/1301))
 * `FIX`: correct undo/redo behavior ([#1218](https://github.com/camunda/camunda-modeler/issues/1218))
-* `FIX`: disable plugin menu item when function returns falsy value ([#1311](https://github.com/camunda/camunda-modeler/pull/1311))
+* `FIX`: disable plugin menu item when function returns falsy
+  value ([#1311](https://github.com/camunda/camunda-modeler/pull/1311))
 
 #### BPMN
 
 * `CHORE`: update to `bpmn-js@3.2.2`
-* `FIX`: gracefully handle missing waypoints ([`45486f2`](https://github.com/bpmn-io/bpmn-js/commit/45486f2afe7f42fcac31be9ca477a7c94babe7d8))
+* `FIX`: gracefully handle missing
+  waypoints ([`45486f2`](https://github.com/bpmn-io/bpmn-js/commit/45486f2afe7f42fcac31be9ca477a7c94babe7d8))
 * `FIX`: restore error dialog for broken diagram ([#1192](https://github.com/camunda/camunda-modeler/issues/1192))
-* `FIX`: replace namespace util to not parse diagram twice ([`bdee98e`](https://github.com/camunda/camunda-modeler/commit/bdee98e1b34fa6088ce71d6d9ebf4b339cb812cc))
+* `FIX`: replace namespace util to not parse diagram
+  twice ([`bdee98e`](https://github.com/camunda/camunda-modeler/commit/bdee98e1b34fa6088ce71d6d9ebf4b339cb812cc))
 
 #### DMN
 
@@ -637,7 +787,8 @@ ___Note:__ Yet to be released changes appear here._
 
 #### General
 
-* `CHORE`: restore improved image resolution, supposedly shipped with `v3.0.0-0` already ([#486](https://github.com/camunda/camunda-modeler/issues/486))
+* `CHORE`: restore improved image resolution, supposedly shipped with `v3.0.0-0`
+  already ([#486](https://github.com/camunda/camunda-modeler/issues/486))
 * `FIX`: set align to origin offset to saner default
 * `FIX`: ensure new diagrams contain unique ids for process, case and decision elements
 
@@ -645,7 +796,8 @@ ___Note:__ Yet to be released changes appear here._
 
 #### General
 
-* `FIX`: handle unrecognized, non-file arguments passed to application ([#1237](https://github.com/camunda/camunda-modeler/issues/1237))
+* `FIX`: handle unrecognized, non-file arguments passed to
+  application ([#1237](https://github.com/camunda/camunda-modeler/issues/1237))
 
 ## 3.0.0-beta.0
 
@@ -655,25 +807,36 @@ ___Note:__ Yet to be released changes appear here._
 * `FEAT`: add BPMN only mode ([#872](https://github.com/camunda/camunda-modeler/issues/872))
 * `FEAT`: rework file dropping
 * `FEAT`: improve logging across the application
-* `FEAT`: allow disabling plug-ins via flag ([`4b365482`](https://github.com/camunda/camunda-modeler/commit/4b3654825d033035e588e33927ceee4ce089af44))
-* `FEAT`: align diagrams to `(0,0)` on save to prevent negative coordinates ([#982](https://github.com/camunda/camunda-modeler/issues/982), [#1183](https://github.com/camunda/camunda-modeler/issues/1183))
+* `FEAT`: allow disabling plug-ins via
+  flag ([`4b365482`](https://github.com/camunda/camunda-modeler/commit/4b3654825d033035e588e33927ceee4ce089af44))
+* `FEAT`: align diagrams to `(0,0)` on save to prevent negative
+  coordinates ([#982](https://github.com/camunda/camunda-modeler/issues/982)
+  , [#1183](https://github.com/camunda/camunda-modeler/issues/1183))
 * `FEAT`: drop diagram origin cross ([#1096](https://github.com/camunda/camunda-modeler/issues/1096))
-* `FEAT`: unify search paths for plug-ins and element templates ([#597](https://github.com/camunda/camunda-modeler/issues/597))
+* `FEAT`: unify search paths for plug-ins and element
+  templates ([#597](https://github.com/camunda/camunda-modeler/issues/597))
 * `FEAT`: show full path to diagram as tab title ([#1187](https://github.com/camunda/camunda-modeler/issues/1187))
-* `FEAT`: make application logs available on file system ([#1156](https://github.com/camunda/camunda-modeler/issues/1156))
+* `FEAT`: make application logs available on file
+  system ([#1156](https://github.com/camunda/camunda-modeler/issues/1156))
 * `CHORE`: update to `electron@3.1.3`
 * `CHORE`: update to `bpmn-js@3.2.0`
 * `FIX`: correct shortcuts shown in overlay ([#1039](https://github.com/camunda/camunda-modeler/issues/1039))
 * `FIX`: properly handle file-drop in XML view ([#571](https://github.com/camunda/camunda-modeler/issues/571))
-* `FIX`: don't throw error when dragging file over diagram tabs ([#1120](https://github.com/camunda/camunda-modeler/issues/1120))
-* `FIX`: prevent jumping when resizing properties/log panels ([`f68e6764`](https://github.com/camunda/camunda-modeler/commit/f68e67643f6fa0cba2ac69f7a832868485b0fc68))
-* `FIX`: re-open + focus docked app on file open (MacOS) ([`eff83531`](https://github.com/camunda/camunda-modeler/commit/eff83531b0d5a7d2735f3f4987048d47743e1f9d))
-* `FIX`: prevent external file changed dialog from opening twice on Windows / Linux ([#1118](https://github.com/camunda/camunda-modeler/issues/1118))
+* `FIX`: don't throw error when dragging file over diagram
+  tabs ([#1120](https://github.com/camunda/camunda-modeler/issues/1120))
+* `FIX`: prevent jumping when resizing properties/log
+  panels ([`f68e6764`](https://github.com/camunda/camunda-modeler/commit/f68e67643f6fa0cba2ac69f7a832868485b0fc68))
+* `FIX`: re-open + focus docked app on file open (
+  MacOS) ([`eff83531`](https://github.com/camunda/camunda-modeler/commit/eff83531b0d5a7d2735f3f4987048d47743e1f9d))
+* `FIX`: prevent external file changed dialog from opening twice on Windows /
+  Linux ([#1118](https://github.com/camunda/camunda-modeler/issues/1118))
 
 #### BPMN
 
-* `FEAT`: set `isHorizontal` to `bpmndi:Shape` elements ([#1096](https://github.com/camunda/camunda-modeler/issues/1096))
-* `FIX`: mark diagram as dirty after `activiti` to `camunda` namespace conversion ([#403](https://github.com/camunda/camunda-modeler/issues/403))
+* `FEAT`: set `isHorizontal` to `bpmndi:Shape`
+  elements ([#1096](https://github.com/camunda/camunda-modeler/issues/1096))
+* `FIX`: mark diagram as dirty after `activiti` to `camunda` namespace
+  conversion ([#403](https://github.com/camunda/camunda-modeler/issues/403))
 
 #### Deploy Dialog
 
@@ -681,24 +844,35 @@ ___Note:__ Yet to be released changes appear here._
 
 #### Plug-ins
 
-* `FEAT`: add ability to reference local assets via logical paths ([`dcf2bc0b`](https://github.com/camunda/camunda-modeler/commit/dcf2bc0bbc2450608992d343d32b2304531c3a80))
-* `FEAT`: recognize plug-ins in `{basePath}/resources/plugins` ([#597](https://github.com/camunda/camunda-modeler/issues/597))
+* `FEAT`: add ability to reference local assets via logical
+  paths ([`dcf2bc0b`](https://github.com/camunda/camunda-modeler/commit/dcf2bc0bbc2450608992d343d32b2304531c3a80))
+* `FEAT`: recognize plug-ins
+  in `{basePath}/resources/plugins` ([#597](https://github.com/camunda/camunda-modeler/issues/597))
 * `CHORE`: gracefully handle plugin load failures ([#1180](https://github.com/camunda/camunda-modeler/issues/1180))
 * `CHORE`: enforce unique names ([#1180](https://github.com/camunda/camunda-modeler/issues/1180))
 * `CHORE`: log loading and activation ([#1180](https://github.com/camunda/camunda-modeler/issues/1180))
-* `CHORE`: improve plugin error handling in various places ([`d916d22f`](https://github.com/camunda/camunda-modeler/commit/d916d22f6a9663d0302e9f2cb6a05521800a1942), [`420cf831`](https://github.com/camunda/camunda-modeler/commit/420cf83137e337b2f42db2acc9ac07d5fc80a0d4), [`39e3c2eb`](https://github.com/camunda/camunda-modeler/commit/39e3c2eb0d47cbebc07c431e182e801518fb14da))
-* `CHORE`: deprecate global plug-in helpers in favor of logical paths ([`1de7af5a`](https://github.com/camunda/camunda-modeler/commit/1de7af5a89704715648ec2f3728a2ac4da660661))
-* `FIX`: give plug-ins stored in `{userData}` access to local assets ([#1135](https://github.com/camunda/camunda-modeler/issues/1135))
-
+* `CHORE`: improve plugin error handling in various
+  places ([`d916d22f`](https://github.com/camunda/camunda-modeler/commit/d916d22f6a9663d0302e9f2cb6a05521800a1942)
+  , [`420cf831`](https://github.com/camunda/camunda-modeler/commit/420cf83137e337b2f42db2acc9ac07d5fc80a0d4)
+  , [`39e3c2eb`](https://github.com/camunda/camunda-modeler/commit/39e3c2eb0d47cbebc07c431e182e801518fb14da))
+* `CHORE`: deprecate global plug-in helpers in favor of logical
+  paths ([`1de7af5a`](https://github.com/camunda/camunda-modeler/commit/1de7af5a89704715648ec2f3728a2ac4da660661))
+* `FIX`: give plug-ins stored in `{userData}` access to local
+  assets ([#1135](https://github.com/camunda/camunda-modeler/issues/1135))
 
 ### Breaking Changes
 
-* The global plug-in helper `getPluginPaths()` did not work reliably and got deprecated. Use logical paths of the form `app-plugins://{pluginName}/{pathToResource}` to reference static plug-in assets ([`1de7af5a`](https://github.com/camunda/camunda-modeler/commit/1de7af5a89704715648ec2f3728a2ac4da660661)).
-* The global plug-in helper `getModelerPath()` was removed without replacement ([`1de7af5a`](https://github.com/camunda/camunda-modeler/commit/1de7af5a89704715648ec2f3728a2ac4da660661)).
-* Rewriting the modeler changed most CSS selectors outside the actual diagram editors / properties panels. This may break plug-ins that monkey patch the application styles.
-* To improve compatibility with external tools, we now prevent negative coordinates by aligning to `(0,0)` on diagram save. This results in slightly more noise in actual file changes ([#1096](https://github.com/camunda/camunda-modeler/issues/1096)).
-
-
+* The global plug-in helper `getPluginPaths()` did not work reliably and got deprecated. Use logical paths of the
+  form `app-plugins://{pluginName}/{pathToResource}` to reference static plug-in
+  assets ([`1de7af5a`](https://github.com/camunda/camunda-modeler/commit/1de7af5a89704715648ec2f3728a2ac4da660661)).
+* The global plug-in helper `getModelerPath()` was removed without
+  replacement ([`1de7af5a`](https://github.com/camunda/camunda-modeler/commit/1de7af5a89704715648ec2f3728a2ac4da660661))
+  .
+* Rewriting the modeler changed most CSS selectors outside the actual diagram editors / properties panels. This may
+  break plug-ins that monkey patch the application styles.
+* To improve compatibility with external tools, we now prevent negative coordinates by aligning to `(0,0)` on diagram
+  save. This results in slightly more noise in actual file
+  changes ([#1096](https://github.com/camunda/camunda-modeler/issues/1096)).
 
 ## 3.0.0-0
 
@@ -706,26 +880,35 @@ _This is a pre-release of the app ported to an entirely new architecture._
 
 #### General
 
-* `FEAT`: add ability for users to give feedback via the Help menu ([#1094](https://github.com/camunda/camunda-modeler/issues/1094))
+* `FEAT`: add ability for users to give feedback via the Help
+  menu ([#1094](https://github.com/camunda/camunda-modeler/issues/1094))
 * `FEAT`: improve resolution of exported images ([#486](https://github.com/camunda/camunda-modeler/issues/486))
 * `CHORE`: rewrite client app in ReactJS ([#866](https://github.com/camunda/camunda-modeler/issues/866))
-* `CHORE`: rewrite back-end for better separation of concerns and extensibility ([#866](https://github.com/camunda/camunda-modeler/issues/866))
+* `CHORE`: rewrite back-end for better separation of concerns and
+  extensibility ([#866](https://github.com/camunda/camunda-modeler/issues/866))
 * `CHORE`: rework back-end to client communication ([#866](https://github.com/camunda/camunda-modeler/issues/866))
 * `CHORE`: update to `electron@3.0.14`
-* `FIX`: do not restrict height of properties panel content ([#283](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/283), [#62](https://github.com/bpmn-io/cmmn-js-properties-panel/pull/62), [#6](https://github.com/bpmn-io/dmn-js-properties-panel/pull/6))
+* `FIX`: do not restrict height of properties panel
+  content ([#283](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/283)
+  , [#62](https://github.com/bpmn-io/cmmn-js-properties-panel/pull/62)
+  , [#6](https://github.com/bpmn-io/dmn-js-properties-panel/pull/6))
 
 #### Deploy Dialog
 
-* `FEAT`: add ability to use authentication ([#1063](https://github.com/camunda/camunda-modeler/pull/1063), [#742](https://github.com/camunda/camunda-modeler/pull/742))
+* `FEAT`: add ability to use authentication ([#1063](https://github.com/camunda/camunda-modeler/pull/1063)
+  , [#742](https://github.com/camunda/camunda-modeler/pull/742))
 * `FEAT`: remember last deployed endpoint URL ([#1041](https://github.com/camunda/camunda-modeler/pull/1041))
-* `FEAT`: improve error handling ([#838](https://github.com/camunda/camunda-modeler/issues/838), [#846](https://github.com/camunda/camunda-modeler/issues/846))
+* `FEAT`: improve error handling ([#838](https://github.com/camunda/camunda-modeler/issues/838)
+  , [#846](https://github.com/camunda/camunda-modeler/issues/846))
 * `FEAT`: deploy only changed resources per default ([#744](https://github.com/camunda/camunda-modeler/issues/744))
 * `FIX`: disable editor shortcuts while modal is active ([#929](https://github.com/camunda/camunda-modeler/issues/929))
 
 #### BPMN
 
-* `FEAT`: add hints to returned Java types in properties panel ([#286](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/286))
-* `FEAT`: show target variable name instead of index in properties panel ([#287](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/287))
+* `FEAT`: add hints to returned Java types in properties
+  panel ([#286](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/286))
+* `FEAT`: show target variable name instead of index in properties
+  panel ([#287](https://github.com/bpmn-io/bpmn-js-properties-panel/pull/287))
 * `CHORE`: update to `bpmn-js@3.1.0`
 * `FIX`: render labels always on top ([#1050](https://github.com/camunda/camunda-modeler/issues/1050))
 
@@ -749,7 +932,8 @@ _This is a pre-release of the app ported to an entirely new architecture._
 
 #### BPMN
 
-* `FIX`: do not join incoming/outgoing flows other than sequence flows on element deletion ([#1033](https://github.com/camunda/camunda-modeler/issues/1033))
+* `FIX`: do not join incoming/outgoing flows other than sequence flows on element
+  deletion ([#1033](https://github.com/camunda/camunda-modeler/issues/1033))
 
 ## 2.2.2
 
@@ -763,7 +947,8 @@ _This is a pre-release of the app ported to an entirely new architecture._
 
 #### General
 
-* `FEAT`: support moving elements via keyboard arrows on all diagram editors ([`a2b5bf07`](https://github.com/camunda/camunda-modeler/commit/a2b5bf079574a90bd1377150c7c39aab181261a6))
+* `FEAT`: support moving elements via keyboard arrows on all diagram
+  editors ([`a2b5bf07`](https://github.com/camunda/camunda-modeler/commit/a2b5bf079574a90bd1377150c7c39aab181261a6))
 * `FEAT`: add accessible context-pad and popup-menu to all remaining diagram editors (DRD, CMMN)
 * `CHORE`: update to `cmmn-js@0.16.0`
 * `CHORE`: update to `dmn-js@6.0.0`
@@ -771,12 +956,15 @@ _This is a pre-release of the app ported to an entirely new architecture._
 
 #### BPMN
 
-* `FEAT`: add editing support for `camunda:isStartableInTasklist` ([#843](https://github.com/camunda/camunda-modeler/issues/843))
+* `FEAT`: add editing support
+  for `camunda:isStartableInTasklist` ([#843](https://github.com/camunda/camunda-modeler/issues/843))
 
 #### DMN
 
-* `FEAT`: support moving canvas via keyboard arrows in DRD editor ([#1016](https://github.com/camunda/camunda-modeler/issues/1016))
-* `FEAT`: add diagram origin cross in DRD editor ([`7dceaf5f9`](https://github.com/camunda/camunda-modeler/commit/7dceaf5f9b764426fa1c647bc7e6b4ffe9148fbb))
+* `FEAT`: support moving canvas via keyboard arrows in DRD
+  editor ([#1016](https://github.com/camunda/camunda-modeler/issues/1016))
+* `FEAT`: add diagram origin cross in DRD
+  editor ([`7dceaf5f9`](https://github.com/camunda/camunda-modeler/commit/7dceaf5f9b764426fa1c647bc7e6b4ffe9148fbb))
 
 ## 2.1.2
 
@@ -799,8 +987,10 @@ _This is a pre-release of the app ported to an entirely new architecture._
 * `FEAT`: add moddle extensions as plugins to bpmn-js ([#949](https://github.com/camunda/camunda-modeler/pull/949))
 * `FEAT`: display group names ([#844](https://github.com/bpmn-io/bpmn-js/issues/844))
 * `FEAT`: add ability to move selection with keyboard arrows ([#376](https://github.com/bpmn-io/bpmn-js/issues/376))
-* `FEAT`: improve `EventBasedGateway` context pad tooltips ([#917](https://github.com/camunda/camunda-modeler/issues/917))
-* `FEAT`: improve modeling behavior after `EventBasedGateway` ([#784](https://github.com/camunda/camunda-modeler/issues/784))
+* `FEAT`: improve `EventBasedGateway` context pad
+  tooltips ([#917](https://github.com/camunda/camunda-modeler/issues/917))
+* `FEAT`: improve modeling behavior
+  after `EventBasedGateway` ([#784](https://github.com/camunda/camunda-modeler/issues/784))
 * `CHORE`: update to `bpmn-js@3`
 
 #### DMN
@@ -817,7 +1007,8 @@ _Republish of `v2.0.2` with fixed distribution_.
 
 ## 2.0.2
 
-* `FIX`: fix native copy and paste in DMN decision tables on MacOS ([#758](https://github.com/camunda/camunda-modeler/issues/758))
+* `FIX`: fix native copy and paste in DMN decision tables on
+  MacOS ([#758](https://github.com/camunda/camunda-modeler/issues/758))
 
 ## 2.0.1
 
@@ -851,14 +1042,16 @@ _This is a pre-release_.
 
 #### General
 
-* `CHORE`: drop Windows installer, as it is currently broken (cf. [#867](https://github.com/camunda/camunda-modeler/issues/867))
+* `CHORE`: drop Windows installer, as it is currently broken (
+  cf. [#867](https://github.com/camunda/camunda-modeler/issues/867))
 
 #### BPMN
 
-* `FEAT`: snap `bpmn:Event` to center when creating message flows ([#887](https://github.com/camunda/camunda-modeler/issues/887))
-* `FIX`: prevent error dragging label onto `bpmn:MessageFlow` ([#888](https://github.com/camunda/camunda-modeler/issues/888))
+* `FEAT`: snap `bpmn:Event` to center when creating message
+  flows ([#887](https://github.com/camunda/camunda-modeler/issues/887))
+* `FIX`: prevent error dragging label
+  onto `bpmn:MessageFlow` ([#888](https://github.com/camunda/camunda-modeler/issues/888))
 * `FIX`: round coordinates when dragging elements ([#886](https://github.com/camunda/camunda-modeler/issues/886))
-
 
 ## 2.0.0-2
 
@@ -870,10 +1063,15 @@ _This is a pre-release_.
 
 _This is a pre-release_.
 
-* `FEAT`: add DMN properties panel, avaliable for all DMN editors ([#847](https://github.com/camunda/camunda-modeler/issues/847))
-* `FEAT`: add ability to edit `camunda:historyTimeToLive` on `dmn:Decision` elements ([#581](https://github.com/camunda/camunda-modeler/issues/581))
-* `FEAT`: add ability to edit `camunda:versionTag` on `dmn:Decision` elements ([#802](https://github.com/camunda/camunda-modeler/issues/802))
-* `CHORE`: drop `dmn:Definitions` `name` and `id` editing from DRD editor; you may edit these properties via the DMN properties panel ([`653eb607`](https://github.com/camunda/camunda-modeler/commits/653eb607183c6cf0457b8023a2d61cf8343da7fb))
+* `FEAT`: add DMN properties panel, avaliable for all DMN
+  editors ([#847](https://github.com/camunda/camunda-modeler/issues/847))
+* `FEAT`: add ability to edit `camunda:historyTimeToLive` on `dmn:Decision`
+  elements ([#581](https://github.com/camunda/camunda-modeler/issues/581))
+* `FEAT`: add ability to edit `camunda:versionTag` on `dmn:Decision`
+  elements ([#802](https://github.com/camunda/camunda-modeler/issues/802))
+* `CHORE`: drop `dmn:Definitions` `name` and `id` editing from DRD editor; you may edit these properties via the DMN
+  properties
+  panel ([`653eb607`](https://github.com/camunda/camunda-modeler/commits/653eb607183c6cf0457b8023a2d61cf8343da7fb))
 
 ## 2.0.0-0
 
@@ -882,19 +1080,24 @@ _This is a pre-release_.
 * `FEAT`: improve minimap, round two
 * `FEAT`: support boundary event to activity loops ([#776](https://github.com/camunda/camunda-modeler/issues/776))
 * `FEAT`: support activity to activity loops
-* `FEAT`: provide Windows installer and MacOS DMG distribution ([#787](https://github.com/camunda/camunda-modeler/issues/787))
+* `FEAT`: provide Windows installer and MacOS DMG
+  distribution ([#787](https://github.com/camunda/camunda-modeler/issues/787))
 * `FEAT`: sign executables on Windows and MacOS ([#787](https://github.com/camunda/camunda-modeler/issues/787))
 * `CHORE`: update to `bpmn-js@2.4.0`
 * `CHORE`: update to `cmmn-js@0.15.0`
 * `CHORE`: update to `diagram-js-minimap@1.2.2`
-* `CHORE`: drop in-app Windows file association behavior in favor of external support script ([`a07b693a`](https://github.com/camunda/camunda-modeler/commits/a07b693a9648715af0410cc13f5c58dcbea2f3df))
+* `CHORE`: drop in-app Windows file association behavior in favor of external support
+  script ([`a07b693a`](https://github.com/camunda/camunda-modeler/commits/a07b693a9648715af0410cc13f5c58dcbea2f3df))
 * `FIX`: correct minimap collapse icon
 * `FIX`: correct app icons ([#503](https://github.com/camunda/camunda-modeler/issues/503))
-* `FIX`: prevent creation of duplicate flows in BPMN editor ([#777](https://github.com/camunda/camunda-modeler/issues/777))
+* `FIX`: prevent creation of duplicate flows in BPMN
+  editor ([#777](https://github.com/camunda/camunda-modeler/issues/777))
 
 ## 1.16.2
 
-* `FIX`: correctly update editor actions on direct editing ([#790](https://github.com/camunda/camunda-modeler/issues/790), [#834](https://github.com/camunda/camunda-modeler/issues/834))
+* `FIX`: correctly update editor actions on direct
+  editing ([#790](https://github.com/camunda/camunda-modeler/issues/790)
+  , [#834](https://github.com/camunda/camunda-modeler/issues/834))
 * `FIX`: use `Arial` as default font when exporting SVG ([#840](https://github.com/camunda/camunda-modeler/issues/840))
 * `CHORE`: update to `dmn-js@5.1.0`
 * `CHORE`: update to `bpmn-js@2.3.1`
@@ -907,10 +1110,13 @@ _This is a pre-release_.
 ## 1.16.0
 
 * `FEAT`: show loader on application startup
-* `FEAT`: resize text annotation when editing via properties panel ([#631](https://github.com/camunda/camunda-modeler/issues/631))
+* `FEAT`: resize text annotation when editing via properties
+  panel ([#631](https://github.com/camunda/camunda-modeler/issues/631))
 * `FIX`: correct error message on import error ([#821](https://github.com/camunda/camunda-modeler/issues/821))
-* `FIX`: create/update labels when updating element name via properties panel ([#824](https://github.com/camunda/camunda-modeler/issues/824))
-* `FIX`: correct target attribute in signal payload not being removed from BPMN 2.0 XML ([#818](https://github.com/camunda/camunda-modeler/issues/818))
+* `FIX`: create/update labels when updating element name via properties
+  panel ([#824](https://github.com/camunda/camunda-modeler/issues/824))
+* `FIX`: correct target attribute in signal payload not being removed from BPMN 2.0
+  XML ([#818](https://github.com/camunda/camunda-modeler/issues/818))
 * `CHORE`: update to `bpmn-js@2.2.0`
 * `CHORE`: update to `diagram-js-minimap@1`
 
@@ -920,24 +1126,30 @@ _This is a pre-release_.
 
 ## 1.15.0
 
-* `FEAT`: allow data stores to be modeled between participants ([#183](https://github.com/camunda/camunda-modeler/issues/183))
-* `FEAT`: allow deletion of external labels, clearing text ([#243](https://github.com/camunda/camunda-modeler/issues/243))
+* `FEAT`: allow data stores to be modeled between
+  participants ([#183](https://github.com/camunda/camunda-modeler/issues/183))
+* `FEAT`: allow deletion of external labels, clearing
+  text ([#243](https://github.com/camunda/camunda-modeler/issues/243))
 * `FEAT`: speed up BPMN diagram import by only rendering non-empty labels
 * `FEAT`: show loader when opening huge diagrams ([#704](https://github.com/camunda/camunda-modeler/issues/704))
 * `FEAT`: export image using native type chooser ([#171](https://github.com/camunda/camunda-modeler/issues/171))
 * `CHORE`: improve text rendering in BPMN diagrams
 * `FIX`: correct BPMN editor align button tooltip ([#590](https://github.com/camunda/camunda-modeler/issues/590))
-* `FIX`: make `cycle` option for BPMN intermediate timer events available again ([#792](https://github.com/camunda/camunda-modeler/issues/792))
+* `FIX`: make `cycle` option for BPMN intermediate timer events available
+  again ([#792](https://github.com/camunda/camunda-modeler/issues/792))
 * `FIX`: correct edit menu on direct editing activation ([#708](https://github.com/camunda/camunda-modeler/issues/708))
-* `FIX`: prevent BPMN element deletion when pressing `DEL` in BPMN properties panel ([#680](https://github.com/camunda/camunda-modeler/issues/680))
+* `FIX`: prevent BPMN element deletion when pressing `DEL` in BPMN properties
+  panel ([#680](https://github.com/camunda/camunda-modeler/issues/680))
 * `CHORE`: update to `Electron@2`
 * `CHORE`: update to `bpmn-js@2.1.0`
 * `CHORE`: update to `bpmn-js-properties-panel@0.25.1`
 
 ## 1.14.0
 
-* `FEAT`: add ability to create a new diagram when opening an empty file ([#636](https://github.com/camunda/camunda-modeler/issues/636))
-* `FEAT`: improve compatibility with Signavio BPMN 2.0 exports ([#732](https://github.com/camunda/camunda-modeler/issues/732))
+* `FEAT`: add ability to create a new diagram when opening an empty
+  file ([#636](https://github.com/camunda/camunda-modeler/issues/636))
+* `FEAT`: improve compatibility with Signavio BPMN 2.0
+  exports ([#732](https://github.com/camunda/camunda-modeler/issues/732))
 * `FIX`: correct context menu positioning in decision table editor
 
 ## ...

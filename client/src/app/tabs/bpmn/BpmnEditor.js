@@ -883,7 +883,7 @@ class Color extends Component {
 function getNamespaceDialog() {
   return {
     type: 'warning',
-    title: 'Deprecated <activiti> namespace detected',
+    title: 'Deprecated <activity> namespace detected',
     buttons: [
       { id: 'cancel', label: 'Cancel' },
       { id: 'yes', label: 'Yes' }

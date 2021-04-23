@@ -8,12 +8,12 @@
   id="Definitions_1"
   targetNamespace="http://activiti.org/bpmn">
   <bpmn:process id="Process_1" isExecutable="true">
-    <bpmn:userTask id="Task_1" activiti:assignee="foo" />
+    <bpmn:userTask id="Task_1" activiti:assignee="foo"/>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
       <bpmndi:BPMNShape id="UserTask_0f49827_di" bpmnElement="Task_1">
-        <dc:Bounds x="241" y="182" width="100" height="80" />
+        <dc:Bounds x="241" y="182" width="100" height="80"/>
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+<definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath"
+             targetNamespace="http://www.activiti.org/test">
   <process id="myProcess" name="My process" isExecutable="true">
     <startEvent id="startevent1" name="Start"></startEvent>
-    <serviceTask id="servicetask1" name="Upload Pictures" camunda:class="org.crowdcomputer.impl.MarketPlaceTask" camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
+    <serviceTask id="servicetask1" name="Upload Pictures" camunda:class="org.crowdcomputer.impl.MarketPlaceTask"
+                 camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
       <extensionElements>
         <camunda:field name="description">
           <camunda:string>upload pictures</camunda:string>
@@ -31,7 +36,8 @@
       </extensionElements>
     </serviceTask>
     <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="servicetask1"></sequenceFlow>
-    <serviceTask id="servicetask2" name="Split Data Task" camunda:class="org.crowdcomputer.impl.SplitData" camunda:extensionId="org.crowdcomputer.ui.SplitData">
+    <serviceTask id="servicetask2" name="Split Data Task" camunda:class="org.crowdcomputer.impl.SplitData"
+                 camunda:extensionId="org.crowdcomputer.ui.SplitData">
       <extensionElements>
         <camunda:field name="operation">
           <camunda:string>SplitN</camunda:string>
@@ -53,7 +59,8 @@
     <sequenceFlow id="flow2" sourceRef="servicetask1" targetRef="servicetask2"></sequenceFlow>
     <exclusiveGateway id="exclusivegateway1" name="Exclusive Gateway"></exclusiveGateway>
     <sequenceFlow id="flow3" sourceRef="servicetask2" targetRef="exclusivegateway1"></sequenceFlow>
-    <serviceTask id="servicetask3" name="Tag pictures" camunda:class="org.crowdcomputer.impl.MarketPlaceTask" camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
+    <serviceTask id="servicetask3" name="Tag pictures" camunda:class="org.crowdcomputer.impl.MarketPlaceTask"
+                 camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
       <extensionElements>
         <camunda:field name="description">
           <camunda:string>tag picutres</camunda:string>
@@ -81,7 +88,8 @@
         </camunda:field>
       </extensionElements>
     </serviceTask>
-    <serviceTask id="servicetask4" name="categorize pictures" camunda:class="org.crowdcomputer.impl.MarketPlaceTask" camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
+    <serviceTask id="servicetask4" name="categorize pictures" camunda:class="org.crowdcomputer.impl.MarketPlaceTask"
+                 camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
       <extensionElements>
         <camunda:field name="description">
           <camunda:string>categorize pictures</camunda:string>
@@ -110,7 +118,8 @@
       </extensionElements>
     </serviceTask>
     <exclusiveGateway id="exclusivegateway2" name="Exclusive Gateway"></exclusiveGateway>
-    <serviceTask id="servicetask5" name="Summary" camunda:class="org.crowdcomputer.impl.MarketPlaceTask" camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
+    <serviceTask id="servicetask5" name="Summary" camunda:class="org.crowdcomputer.impl.MarketPlaceTask"
+                 camunda:extensionId="org.crowdcomputer.ui.task.MarketPlaceTask">
       <extensionElements>
         <camunda:field name="description">
           <camunda:string>summary</camunda:string>
@@ -145,7 +154,8 @@
     <sequenceFlow id="flow8" sourceRef="exclusivegateway1" targetRef="servicetask4"></sequenceFlow>
     <sequenceFlow id="flow9" sourceRef="servicetask4" targetRef="exclusivegateway2"></sequenceFlow>
     <sequenceFlow id="flow10" sourceRef="exclusivegateway2" targetRef="servicetask7"></sequenceFlow>
-    <serviceTask id="servicetask7" name="Join Object Task" camunda:class="org.crowdcomputer.impl.JoinObject" camunda:extensionId="org.crowdcomputer.ui.JoinObject">
+    <serviceTask id="servicetask7" name="Join Object Task" camunda:class="org.crowdcomputer.impl.JoinObject"
+                 camunda:extensionId="org.crowdcomputer.ui.JoinObject">
       <extensionElements>
         <camunda:field name="field">
           <camunda:string>resource_id</camunda:string>

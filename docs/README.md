@@ -2,7 +2,6 @@
 
 Developer documentation for the Camunda Modeler.
 
-
 ### [Element Templates](./element-templates)
 
 Setup, use, and contribute pre-defined custom elements with the Camunda Modeler.

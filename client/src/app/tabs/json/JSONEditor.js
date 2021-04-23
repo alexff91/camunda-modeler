@@ -69,7 +69,7 @@ export class JSONEditor extends CachedComponent {
       this.checkImport();
     }
 
-    if (isChachedStateChange(prevProps, this.props)) {
+    if (isCachedStateChange(prevProps, this.props)) {
       this.handleChanged();
     }
   }
@@ -239,6 +239,6 @@ function trim(string) {
   return string;
 }
 
-function isChachedStateChange(prevProps, props) {
+function isCachedStateChange(prevProps, props) {
   return prevProps.cachedState !== props.cachedState;
 }

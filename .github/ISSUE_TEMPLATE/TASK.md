@@ -1,6 +1,5 @@
 ---
-name: Task
-about: Describe a generic activity we should carry out.
+name: Task about: Describe a generic activity we should carry out.
 ---
 
 

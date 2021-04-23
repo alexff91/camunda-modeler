@@ -1,19 +1,17 @@
 > __Note:__ If possible, execute the integration test on our [released artifacts](https://github.com/camunda/camunda-modeler/releases).
 
-
 # Integration Test
 
 We use a number of pre-defined steps to ensure the stability of our releases through integration tests.
 
 __Target:__ Perform tests on nightly builds on supported platforms.
 
-
 ### Test Procedure
 
 * [ ] fetch [latest release/nightly](https://camunda.org/release/camunda-modeler/)
-* [ ] fetch [latest version of Cawemo plugin](https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/)
+* [ ] 
+  fetch [latest version of Cawemo plugin](https://downloads.camunda.cloud/enterprise-release/cawemo/cloud-connect-modeler-plugin/)
 * [ ] click like crazy (see [below](#test-checklist))
-
 
 ### Test Checklist
 
@@ -50,15 +48,15 @@ Manual integration tests:
 Based on the [test diagram](./test.bpmn.png):
 
 * [ ] Add Form configuration (FormField + FormData) to "Inspect Invoice" UserTask
-    * [ ] Copy / Paste task; properties are kept
-    * [ ] Change task to ServiceTask; properties are gone from XML
-    * [ ] Undo last step `CTRL + Z`; properties are back
-    * [ ] Redo last step `CTRL + Y`; Task changed to Service Task without form properties
+  * [ ] Copy / Paste task; properties are kept
+  * [ ] Change task to ServiceTask; properties are gone from XML
+  * [ ] Undo last step `CTRL + Z`; properties are back
+  * [ ] Redo last step `CTRL + Y`; Task changed to Service Task without form properties
 * [ ] Add Properties, Input/Output Mapping, `asyncBefore`, Retry Time Cycle and implementation to "Check" ServiceTask
-    * [ ] Copy / Paste task; properties are kept
-    * [ ] Change task to Send Task; properties are kept
-    * [ ] Change task to UserTask; implementation property is gone from XML (except Retry Time Cycle, Input/output Mapping and `asyncBefore`)
-
+  * [ ] Copy / Paste task; properties are kept
+  * [ ] Change task to Send Task; properties are kept
+  * [ ] Change task to UserTask; implementation property is gone from XML (except Retry Time Cycle, Input/output Mapping
+    and `asyncBefore`)
 
 #### DMN modeling
 
@@ -77,8 +75,7 @@ Based on the [test diagram](./test.bpmn.png):
 * [ ] export DRD as JPG
 * [ ] SVG, PNG and JPG exports open in browser
 
-
-####  Forms modeling
+#### Forms modeling
 
 * [ ] create a new Camunda Form
 * [ ] build [this form](./test.form.png) from scratch
@@ -87,30 +84,27 @@ Based on the [test diagram](./test.bpmn.png):
 * [ ] add a `required` validation to the creditor field
 * [ ] add a regular expression (`^C-[0-9]+$`) to the invoice number field
 
-
 #### FS integration (platform specific)
 
 * [ ] external change detection works
-    * [ ] change file in external editor
-    * [ ] focus editor with file open
-    * [ ] message to reload displays
+  * [ ] change file in external editor
+  * [ ] focus editor with file open
+  * [ ] message to reload displays
 * [ ] double click in FS opens file in editor (existing instance _?_)
-    * [ ] `.bpmn`
-    * [ ] `.dmn`
-    * [ ] `.form`
-
+  * [ ] `.bpmn`
+  * [ ] `.dmn`
+  * [ ] `.form`
 
 #### Error Handling
 
 * [ ] Open [`broken.bpmn`](./broken.bpmn) and verify a proper error message is shown (_No diagram to display_)
 
-
 #### Installers (platform specific)
 
 * [ ] MacOS
-    * [ ] [Downloading archive](https://github.com/camunda/camunda-modeler/releases), extracting and starting application works
-    * [ ] [Downloading DMG](https://github.com/camunda/camunda-modeler/releases), installing and starting it works
-
+  * [ ] [Downloading archive](https://github.com/camunda/camunda-modeler/releases), extracting and starting application
+    works
+  * [ ] [Downloading DMG](https://github.com/camunda/camunda-modeler/releases), installing and starting it works
 
 #### Cawemo Plugin
 

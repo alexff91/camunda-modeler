@@ -3,7 +3,9 @@
 In this document we'll refer to our internal telemetry server as `ET` :alien:.
 
 ## General Structure of the Events
+
 Independent from the type of the event we're dealing with, the payload we send to the ET has the following structure:
+
 ```json
 {
   "installation": "[THE_EDITOR_ID]",
@@ -24,13 +26,15 @@ Every event directly modifies the `internals` field of the payload.
 ## Definition of Events
 
 ### Ping Event
+
 The `Ping Event` is sent in following situations:
 
- - The modeler is opened (given that `Usage Statistics` option is enabled)
- - `Usage Statistics` option is enabled for the first time.
- - Once every 24 hours (given that `Usage Statistics` option is enabled)
+- The modeler is opened (given that `Usage Statistics` option is enabled)
+- `Usage Statistics` option is enabled for the first time.
+- Once every 24 hours (given that `Usage Statistics` option is enabled)
 
 The Ping Event has the following structure:
+
 ```json
 {
   "event": "ping"
@@ -38,16 +42,18 @@ The Ping Event has the following structure:
 ```
 
 ### Diagram Opened Event
+
 The `Diagram Opened Event` is sent in following situations:
 
- - User created a new BPMN diagram
- - User created a new DMN diagram
- - User created a new CMMN diagram
- - User opened an existing BPMN diagram
- - User opened an existing DMN diagram
- - User opened an existing CMMN diagram
+- User created a new BPMN diagram
+- User created a new DMN diagram
+- User created a new CMMN diagram
+- User opened an existing BPMN diagram
+- User opened an existing DMN diagram
+- User opened an existing CMMN diagram
 
 The Diagram Opened Event has the following core structure:
+
 ```json
 {
   "event": "diagramOpened",
@@ -55,8 +61,7 @@ The Diagram Opened Event has the following core structure:
 }
 ```
 
-In case the diagram type is bpmn, we also add the element template usage to
-Diagram Opened Event payload:
+In case the diagram type is bpmn, we also add the element template usage to Diagram Opened Event payload:
 
 ```json
 {
@@ -120,12 +125,14 @@ In terms it is set in the diagram, we add the engine profile:
 ```
 
 ### Deployment Event
+
 The `Deployment Event` is sent in following situations:
 
- - User deploys a BPMN diagram to the Camunda Engine
- - User deploys a DMN diagram to the Camunda Engine
+- User deploys a BPMN diagram to the Camunda Engine
+- User deploys a DMN diagram to the Camunda Engine
 
 The Deployment Event has the following core structure:
+
 ```json
 {
   "event": "deployment",
@@ -136,7 +143,8 @@ The Deployment Event has the following core structure:
 }
 ```
 
-In case the diagram deployment was not successful, the error code returned from the Camunda Engine will be added to the payload:
+In case the diagram deployment was not successful, the error code returned from the Camunda Engine will be added to the
+payload:
 
 ```json
 {

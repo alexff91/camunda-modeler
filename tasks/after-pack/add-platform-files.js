@@ -42,7 +42,7 @@ module.exports = async function(context) {
   };
 
   await copyGlob('resources/platform/base/**', appOutDir, options);
-  await copyGlob(`resources/platform/${electronPlatformName}/**`, appOutDir, options);
+  await copyGlob(`resources/platform/${electronPlatformName}//**`, appOutDir, options);
 
   copy('LICENSE', `${appOutDir}/LICENSE.${name}.txt`);
   copy('THIRD_PARTY_NOTICES', `${appOutDir}/THIRD_PARTY_NOTICES.${name}.txt`);

@@ -281,9 +281,18 @@
         "type": "Dropdown",
         "value": "50",
         "choices": [
-          { "name": "low", "value": "20" },
-          { "name": "medium", "value": "50" },
-          { "name": "height", "value": "100" }
+          {
+            "name": "low",
+            "value": "20"
+          },
+          {
+            "name": "medium",
+            "value": "50"
+          },
+          {
+            "name": "height",
+            "value": "100"
+          }
         ],
         "binding": {
           "type": "property",

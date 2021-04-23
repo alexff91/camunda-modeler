@@ -6,15 +6,14 @@ An integrated modeling solution for BPMN and DMN based on [bpmn.io](http://bpmn.
 
 ![Camunda Modeler](docs/screenshot.png)
 
-
 ## Resources
 
 * [Changelog](./CHANGELOG.md)
-* [Download](https://camunda.com/download/modeler/) (see also [nightly builds](https://downloads.camunda.cloud/release/camunda-modeler/nightly/))
+* [Download](https://camunda.com/download/modeler/) (see
+  also [nightly builds](https://downloads.camunda.cloud/release/camunda-modeler/nightly/))
 * [Give Feedback](https://forum.camunda.org/c/modeler)
 * [Report a Bug](https://github.com/camunda/camunda-modeler/issues)
 * [User Documentation](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/)
-
 
 ## Building the Application
 
@@ -34,7 +33,6 @@ npm run all
 npm run build
 ```
 
-
 ### Development Setup
 
 Spin up the application for development, all strings attached:
@@ -43,20 +41,18 @@ Spin up the application for development, all strings attached:
 npm run dev
 ```
 
-
 ## Contributing
 
-Please checkout our [contributing guidelines](./.github/CONTRIBUTING.md) if you plan to
-file an issue or pull request.
-
+Please checkout our [contributing guidelines](./.github/CONTRIBUTING.md) if you plan to file an issue or pull request.
 
 ## Code of Conduct
 
-By participating to this project, please uphold to our [Code of Conduct](https://github.com/camunda/.github/blob/main/.github/CODE_OF_CONDUCT.md).
-
+By participating to this project, please uphold to
+our [Code of Conduct](https://github.com/camunda/.github/blob/main/.github/CODE_OF_CONDUCT.md).
 
 ## License
 
 MIT
 
-Uses [bpmn-js](https://github.com/bpmn-io/bpmn-js), [dmn-js](https://github.com/bpmn-io/dmn-js), and [cmmn-js](https://github.com/bpmn-io/cmmn-js), licensed under the [bpmn.io license](http://bpmn.io/license).
+Uses [bpmn-js](https://github.com/bpmn-io/bpmn-js), [dmn-js](https://github.com/bpmn-io/dmn-js),
+and [cmmn-js](https://github.com/bpmn-io/cmmn-js), licensed under the [bpmn.io license](http://bpmn.io/license).
