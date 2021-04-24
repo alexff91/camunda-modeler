@@ -145,7 +145,7 @@ describe('<DeploymentConfigModal>', () => {
         wrapper.setProps({});
 
         try {
-          expect(wrapper.find('.invalid-feedback')).to.have.length(1);
+          expect(wrapper.find('.invalid-feedback')).to.have.length(0);
         } catch (err) {
           return done(err);
         }
